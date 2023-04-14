@@ -1,5 +1,5 @@
 document.querySelector('#footer-section').innerHTML= `
-    <div class="bg-dark-green">
+    <div>
         <h1>Footer</h1>
         <p>
             Click on the Vite logo to learn more

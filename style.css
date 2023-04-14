@@ -6,8 +6,3 @@
   font-family: 'Livvic';
   src: url('./public/Fonts/Livvic-Bold.ttf');
 }
-
-@font-face {
-  font-family: 'Livvic-semibold';
-  src: url('./public/Fonts/Livvic-SemiBold.ttf');
-}
