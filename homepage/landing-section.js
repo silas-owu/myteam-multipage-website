@@ -1,7 +1,7 @@
 
 document.querySelector('#landing-section').innerHTML = `
 
-  <div class="mobile:flex mobile:flex-col px-1">
+  <div class="mobile:flex mobile:flex-col px-1 ">
     <div class="mobile:h-[20.44rem] mobile:w-[20.13rem] mobile:mx-auto mobile:mt-[3rem] mobile:grid mobile:grid-rows-[5rem_13.125rem] mobile:gap-y-[2.1rem] ">
       <nav class="flex flex-row justify-between">
         <div class="mobile:h-[2rem] mobile:w-[8rem]">
@@ -21,10 +21,10 @@ document.querySelector('#landing-section').innerHTML = `
           We’re about to change that.
         </p> 
       </div>
-      </div>
-      <div class="self-center mobile:ml-2 mobile:mt-[0.9rem] mobile:w-[22.375rem] mobile:h-[12.5rem]">
-        <img src='../assets/bg-home-pattern.svg' />
-      </div>
+    </div>
+    <div class="self-center mobile:ml-2 mobile:mt-[1.2rem] mobile:w-[22.375rem] mobile:h-[12.5rem]">
+      <img src='../assets/bg-home-pattern.svg' />
+    </div>
   </div>
 `
 
