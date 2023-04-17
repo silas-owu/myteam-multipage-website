@@ -21,6 +21,7 @@ export default {
     screens: {
       'mobile': {'min':'320px','max':'427px'},
       'tablet': {'min':'427px','max':'770px'},
+      'laptop': {'min':'780px','max':'1440px'},
       // 'laptop': {'min':'771px','max':'1024px'}
       
     },
