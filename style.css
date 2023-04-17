@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Livvic';
-  src: url('./public/Fonts/Livvic-Bold.ttf');
-}
+/* @font-face { */
+  /* font-family: 'Livvic'; */
+  /* src: url('./public/Fonts/Livvic-Bold.ttf'); */
+/* } */

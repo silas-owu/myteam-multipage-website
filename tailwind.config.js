@@ -1,13 +1,28 @@
  /** @type {import('tailwindcss').Config} */
- export default {
-  content: ["*.{html,js}",
-            "index.html"],
+ const plugin = require('tailwindcss/plugin');
+ 
+export default {
+   content: [
+    './homepage/*.js',
+    '*.html'],
+ /*  options:{
+    paths:{
+      fonts:[
+        './public/Fonts/Livvic-Bold.ttf',
+        './public/Fonts/Livvic-SemiBold.ttf'
+      ]
+    }
+  } */
+
   theme: {
+    fontFamily:{
+      'livvic' :['Livvic', 'sans-serif']
+    },
     screens: {
-      'mobile': {'min':'320px'  ,'max':'427px'},
+      'mobile': {'min':'320px','max':'427px'},
       'tablet': {'min':'427px','max':'770px'},
       // 'laptop': {'min':'771px','max':'1024px'}
-
+      
     },
     colors:{
       //primary colors
@@ -19,9 +34,13 @@
       'rapture-blue':'#79c8c7',
       'police-blue':'#2c6269',
     },
-    fontFamily:{'livvic':['Livvic', 'sans-serif']},
     extend: {
     },
   },
-  plugins: []
+
+  plugins: [
+    plugin(function({addVariant}){
+      addVariant("children", "&>*")
+    })
+  ]
 }
