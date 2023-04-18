@@ -3,15 +3,15 @@ document.querySelector('#landing-section').innerHTML = `
 
   <div class="laptop:flex laptop:flex-col  laptop:mt-[3.875rem] laptop:mx-[10.3125rem] laptop:h-[46.125rem]   mobile:flex mobile:flex-col mobile:mx-4 tablet:w-[43.0625rem] tablet:flex tablet:flex-col  tablet:gap-[9.75rem]">
     <div class=" laptop:grid laptop:grid-rows-[3rem_13.125rem] laptop:gap-y-[8.75rem] tablet:grid tablet:grid-rows-[3rem_13.75rem] tablet:gap-y-[7rem] mobile:h-[20.44rem] mobile:w-[20.44rem] mobile:mx-1 mobile:pr-[0.5rem]  mobile:mt-[3rem] mobile:grid mobile:grid-rows-[5rem_13.125rem] mobile:gap-y-[2.1rem] ">
-      <nav class="flex flex-row  tablet:items-center mobile:justify-between ">
+      <nav class="flex flex-row mobile:mt-[1rem] tablet:items-center mobile:justify-between ">
         <div class="mobile:h-[2rem] mobile:w-[8rem]">
             <img src='../assets/logo.svg'/>
         </div>
         <div class="flex laptop:my-1  laptop:pl-[3rem]  tablet:pl-[3rem] gap-[3rem] mobile:hidden">
-          <h3 class="font-livvic font-semibold la text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3>
-          <h3 class="font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3>
+          <h3 class=" hover:text-light-coral font-livvic font-semibold la text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3>
+          <h3 class=" hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3>
         </div>
-        <button class="laptop:ml-[40rem]  tablet:ml-[10.77rem] border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff] mobile:hidden">contact us</button>
+        <button class="hover:bg-[#fff] hover:text-dark-green  laptop:ml-[40rem]  tablet:ml-[10.77rem] border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff] mobile:hidden">contact us</button>
         <div class="mobile:w-[1.25rem] mobile:h-[1.0625rem] mobile:mt-1 tablet:hidden laptop:hidden">
           <img src='../assets/menu-white.svg'/>
         </div>
@@ -36,7 +36,9 @@ document.querySelector('#landing-section').innerHTML = `
     <div class="laptop:absolute laptop:left-[-6.5rem] laptop:top-[16rem] tablet:hidden mobile:hidden">
       <img src='../assets/bg-pattern-home-1.svg'/>
     </div>
+
   </div>
+
 `
 
 // setupCounter(document.querySelector('#counter'))
