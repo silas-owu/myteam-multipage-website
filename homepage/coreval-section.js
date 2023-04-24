@@ -1,6 +1,6 @@
 document.querySelector('#coreval-section').innerHTML= `
     <div class="mobile:flex mobile:flex-col mobile:overflow-x-hidden  tablet:overflow-x-hidden  mobile:relative laptop:overflow-x-hidden">
-        <div class="absolute w-[12.5rem] h-[15.25rem] laptop:overflow-x-hidden laptop:right-[-24rem]  mobile:overflow-x-hidden tablet:right-[-7rem]  tablet:ml-[10rem]  mobile:left-[17rem] mobile:ml-[2rem] ">
+        <div class="absolute w-[12.5rem] h-[15.25rem] laptop:hidden tablet:hidden laptop:overflow-x-hidden laptop:right-[-24rem]  mobile:overflow-x-hidden tablet:right-[-7rem]  tablet:ml-[10rem]  mobile:left-[17rem] mobile:ml-[2rem] ">
             <img src='../assets/bg-pattern-home-3.svg'/>
         </div>
         <div class="laptop:w-[69.375rem] laptop:h-[25.25rem] laptop:mx-auto laptop:my-[8.75rem] laptop:grid laptop:grid-cols-[27.8125rem_33.75rem]  laptop:children:border-[#eef] laptop:gap-x-[7.8125rem]  mobile:mx-10 mobile:my-[4rem] mobile:gap-y-[3.5rem] mobile:grid mobile:grid-rows-[12.25rem_43.3125rem] mobile:w-[20.4375rem] tablet:w-[35.8125rem] tablet:h-[31.875rem] tablet:grid tablet:grid-rows-[4rem_21.625rem] tablet:mt-[7rem] tablet:gap-y-[6.7rem]">
