@@ -1,5 +1,5 @@
 document.querySelector('#testimonials-section').innerHTML= `
-    <div class="mobile:w-full mobile:flex mobile:flex-col mobile:gap-y-14 tablet:gap-y-2 mobile:mx-auto tablet:flex tablet:flex-col laptop:flex laptop:flex-col laptop:gap-y-10">
+    <div class="mobile:w-full mobile:flex mobile:flex-col mobile:gap-y-14 tablet:gap-y-2 mobile:mx-auto tablet:flex tablet:flex-col laptop:flex laptop:flex-col laptop:w-[95rem] laptop:gap-y-10">
         <div class="mobile:w-[9.1875rem] mobile:h-[6.25rem]">
             <img src='../assets/bg-pattern-home-4-about-3.svg'/>
         </div>
@@ -65,7 +65,7 @@ document.querySelector('#testimonials-section').innerHTML= `
                 </div>               
             </div>
         </div>
-        <div class="w-[12.5rem] h-[6.2rem]  mobile:ml-auto tablet:ml-auto laptop:ml-auto">
+        <div class="w-[12.5rem] h-[6.2rem]  mobile:ml-auto tablet:ml-auto self-end">
             <img src='../assets/bg-pattern-home-5.svg'/>
         </div>
     </div>
