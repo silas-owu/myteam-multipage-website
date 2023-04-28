@@ -42,8 +42,81 @@ export default {
   },
 
   plugins: [
-    plugin(function({addVariant}){
+    plugin(function({addVariant,addComponents,addBase}){
       addVariant("children", "&>*")
+
+
+      //The addComponent method doesn't
+      // include the style from the 
+      //index.html/aboutpage.html or the parent pages
+      addComponents({
+        '.nav-mobile':{
+            marginTop: '1rem',
+            justifyContent: 'space-between'
+        },
+
+        '.logosize-mobile':{
+          width:'8rem',
+          height:'2rem',
+          cursor: 'pointer'
+        },
+
+        '.contact-mobile':{
+          width:'21.9375rem',
+          display:'flex',
+          flexDirection:'column',
+          rowGap:'0',
+          marginTop:'4rem'
+        },
+
+        '.contactinner-mobile':{
+          width:'12.89rem',
+          display:'flex',
+          flexDirection:'column',
+          rowGap:'1rem',
+          marginLeft:'5rem',
+          marginTop:'1rem'
+        },
+
+        '.footer-mobile':{
+          paddingLeft: '1.7rem',
+          paddingRight: '1.7rem',
+          width:'20.4375rem',
+          height:'18.875rem',
+          display: 'flex',
+          flexDirection:'column',
+          rowGap: '1.2rem'
+        },
+
+        '.footerSection1-mobile':{
+            display:'flex',
+            flexDirection:'column',
+            rowGap: '1.5rem'
+        },
+
+        '.footerSection2-mobile':{
+          height:'6.25rem',
+          textAlign:'center',
+          rowGap: '0.5rem'
+        },
+
+        '.footerSection3-mobile':{
+          width:'17.9375rem',
+          display:'flex',
+          flexDirection: 'column',
+          rowGap:'1rem',
+          marginTop:'1rem'
+        },
+
+        '.footerSvgElement-mobile':{
+          display:'flex',
+          flexDirection:'row',
+          justifyContent:'space-evenly'
+        }
+
+      },['mobile'])
+
     })
   ]
 }
+// flex flex-row mobile:mt-[1rem] tablet:items-center mobile:justify-between

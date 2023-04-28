@@ -1,7 +1,7 @@
 document.querySelector('#footer-section').innerHTML= `
 
-    <div class="mobile:px-[1.5rem]  mobile:w-[20.4375rem] mobile:gap-y-[1.2rem] mobile:h-[18.875rem]  mobile:flex mobile:flex-col tablet:flex tablet:flex-col tablet:py-[3.5rem] tablet:mx-auto tablet:w-[43.0675rem] tablet:gap-y-8 laptop:flex laptop:flex-row laptop:w-[69.375rem] laptop:justify-between  laptop:gap-6">
-        <div class="mobile:flex mobile:flex-col mobile:gap-y-6 tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-row laptop:gap-[7.8125rem]">
+    <div class="footer-mobile tablet:flex tablet:flex-col tablet:py-[3.5rem] tablet:mx-auto tablet:w-[43.0675rem] tablet:gap-y-8 laptop:flex laptop:flex-row laptop:w-[69.375rem] laptop:justify-between  laptop:gap-6">
+        <div class=" footerSection1-mobile tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-row laptop:gap-[7.8125rem]">
             <div class=" flex flex-col mobile:gap-y-4 mobile:mx-auto mobile:mt-[1rem]  tablet:gap-y-[3.3125rem] laptop:gap-y-[1.5625rem]">
                 <div class="laptop:w-[10rem] laptop:h-10 w-[6rem] h-[1.5rem] mobile:mx-auto">
                     <img src='../assets/logo.svg'/>
@@ -11,15 +11,15 @@ document.querySelector('#footer-section').innerHTML= `
                     <h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem]  hover:text-light-coral cursor-pointer">about</h2>
                 </div>
             </div>
-            <div class="mobile:h-[6.25rem] mobile:text-center font-livvic font-semibold text-[0.9375rem] text-[#fff] leading-[1.5625rem] mobile:gap-y-2 tablet:text-right laptop:self-center">
+            <div class="footerSection2-mobile font-livvic font-semibold text-[0.9375rem] text-[#fff] leading-[1.5625rem]  tablet:text-right laptop:self-center">
                 <p class="opacity-[60%] text-[0.9375rem]">987 Hilcrest Lane</p>
                 <p class="opacity-[60%]">Irvine,CA</p>
                 <p class="opacity-[60%]">California 92714</p>
                 <p class="opacity-[60%]">Call Us: 949-833-7432</p>
             </div>
         </div>
-        <div class=" mobile:mt-[1rem] mobile:flex mobile:flex-col mobile:gap-y-4 mobile:w-[17.9375rem] tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12 ">
-            <div class="mobile:flex mobile:flex-row mobile:justify-evenly tablet:flex tablet:flex-row gap-4 tablet:items-center laptop:flex laptop:flex-row laptop:self-end ">
+        <div class=" footerSection3-mobile  tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12 ">
+            <div class="footerSvgElement-mobile tablet:flex tablet:flex-row gap-4 tablet:items-center laptop:flex laptop:flex-row laptop:self-end ">
                 <div>
                     <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                         <path  class="hover:fill-light-coral" fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
