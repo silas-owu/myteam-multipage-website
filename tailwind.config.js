@@ -19,7 +19,7 @@ export default {
       'livvic' :['Livvic', 'sans-serif']
     },
     screens: {
-      'mobile': {'min':'320px','max':'427px'},
+      'mobile': {'min':'200px','max':'427px'},
       'tablet': {'min':'427px','max':'768px'},
       'laptop': {'min':'770px'}
       // 'laptop': {'min':'771px','max':'1024px'}
