@@ -7,7 +7,7 @@ document.querySelector('#homepage-modal').innerHTML=`
                 </div>
                 <div class="mobile:flex mobile:flex-col mobile:gap-y-8">
                     <h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold  text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3>
-                    <h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3>
+                    <a href="../aboutpage.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
                 </div>
                 <button class="cursor-pointer mt-[2.25rem] hover:bg-[#fff] hover:text-dark-green  border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff]">contact us</button>
             </div>

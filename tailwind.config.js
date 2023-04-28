@@ -4,6 +4,8 @@
 export default {
    content: [
     './homepage/*.js',
+    './aboutpage/*.js',
+    './contact/*.js',
     '*.html'],
  /*  options:{
     paths:{

@@ -14,7 +14,7 @@ $(function() {
         $homepageModal.css('visibility','hidden')
     });
 
-    $homepageModal.on('click',(event)=>{
-        $(event.currentTarget).css('visibility','hidden')
-    });
+    // $homepageModal.on('click',(event)=>{
+    //     $(event.currentTarget).css('visibility','hidden')
+    // });
 });
