@@ -8,4 +8,4 @@ document.querySelector('#contact-section').innerHTML= `
             <img src='../assets/bg-pattern-home-6-about-5.svg'/>
         </div>
     </div>
-`
+`;
