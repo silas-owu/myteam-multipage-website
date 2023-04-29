@@ -36,6 +36,7 @@ export default {
       'dark-green': '#002529',
       'rapture-blue':'#79c8c7',
       'police-blue':'#2c6269',
+      'onahau':'#C4FFFE'
     },
     extend: {
     },
@@ -50,6 +51,14 @@ export default {
       // include the style from the 
       //index.html/aboutpage.html or the parent pages
       addComponents({
+        '.teamscontainer-mobile':{
+          display:'flex',
+          flexDirection:'column',
+          backgroundColor:'sacramento',
+          width:'20.4375rem',
+          height:'17.5625rem',
+        },
+
         '.nav-mobile':{
             marginTop: '1rem',
             justifyContent: 'space-between'
