@@ -54,7 +54,7 @@ export default {
         '.teamscontainer':{
           display:'flex',
           flexDirection:'column',
-          width:'20.4375rem',
+          width:'23.4rem',
           height:'15.8125rem',
           paddingLeft:'auto',
           paddingRight:'auto'
