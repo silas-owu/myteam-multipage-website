@@ -51,12 +51,44 @@ export default {
       // include the style from the 
       //index.html/aboutpage.html or the parent pages
       addComponents({
-        '.teamscontainer-mobile':{
+        '.teamscontainer':{
           display:'flex',
           flexDirection:'column',
-          backgroundColor:'sacramento',
           width:'20.4375rem',
-          height:'17.5625rem',
+          height:'15.8125rem',
+          paddingLeft:'auto',
+          paddingRight:'auto'
+        },
+
+        '.avatar':{
+            width:'6rem',
+            height:'6rem',
+            marginLeft:'auto',
+            marginRight:'auto',
+            marginTop:'2rem',
+            border:'2px solid #C4FFFE',
+            borderRadius:'100%'
+        },
+
+        '.avatarText':{
+          fontWeight:'bold',
+          fontSize:'1.125rem',
+          lineHeight:'1.75rem',
+          // textColor:'#79c8c7'
+        },
+
+        '.avatarplus':{
+          width:'3.5rem',
+          height:'3.5rem',
+          backgroundColor:'#F67E7E',
+          borderRadius:'100%',
+          marginLeft:'auto',
+          marginRight:'auto',
+          marginTop:'-1.75rem',
+          display:'flex',
+          flexDirection:'row',
+          justifyContent:'center',
+          alignItems:'center'
         },
 
         '.nav-mobile':{
