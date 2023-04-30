@@ -1,7 +1,10 @@
 document.querySelector('#teams-section').innerHTML=`
 
-    <div class="mobile:flex mobile:flex-col ">
-        <div class="mobile:h-[117.875rem] mobile:mx-6 mobile:my-[5.5rem] mobile:flex mobile:flex-col mobile:gap-y-16">
+    <div class="mobile:flex mobile:flex-col mobile:overflow-hidden">
+        <div class="-mt-[6.8rem] -ml-[6.5rem] ">
+            <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
+        </div>
+        <div class="mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-16">
             <h2 class="font-livvic text-[#fff] text-[2rem] font-bold text-center ">Meet the directors</h2>
             <div class="mobile:flex mobile:flex-col mobile:gap-y-20 chldren:mobile:w-[20.4375rem] children:mobile:h-[17.5625rem] ">
                 <div>
@@ -90,6 +93,9 @@ document.querySelector('#teams-section').innerHTML=`
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mobile:ml-auto">
+            <img src='../public/assets/bg-pattern-home-4-about-3.svg'/>
         </div>
     </div>
 `;
