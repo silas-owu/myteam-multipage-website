@@ -3,7 +3,7 @@ document.querySelector('#teams-section').innerHTML=`
     <div class="mobile:flex mobile:flex-col ">
         <div class="mobile:h-[117.875rem] mobile:mx-6 mobile:my-[5.5rem] mobile:flex mobile:flex-col mobile:gap-y-16 border-dashed border-2 border-[#2e0]">
             <h2 class="font-livvic text-[#fff] text-[2rem] font-bold text-center ">Meet the directors</h2>
-            <div class="mobile:flex mobile:flex-col mobile:gap-y-6  chldren:mobile:w-[20.4375rem] children:mobile:h-[17.5625rem] ">
+            <div class="mobile:flex mobile:flex-col mobile:gap-y-20 chldren:mobile:w-[20.4375rem] children:mobile:h-[17.5625rem] ">
                 <div>
                     <div class="bg-sacramento font-livvic mobile:teamscontainer ">
                         <img class="mobile:avatar" src='../assets/avatar-nikita.jpg'/>
