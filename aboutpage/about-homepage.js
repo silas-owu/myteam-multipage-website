@@ -1,10 +1,31 @@
 document.querySelector("#about-page").innerHTML= `
 
+    <div class="flex flex-col mobile:overflow-hidden">
+        <div class="mobile:w-[20.44rem] mobile:mx-12 mobile:flex mobile:flex-col mobile:mt-[3rem] mobile:gap-y-20">
+            <nav class="flex flex-row nav-mobile tablet:items-center">
+                <div class="logosize-mobile">
+                    <img src='../assets/logo.svg'/>
+                </div>
+                <div class="flex laptop:my-1  laptop:pl-[3rem]  tablet:pl-[3rem] gap-[3rem] mobile:hidden">
+                    <h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold la text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3>
+                    <a href="aboutpage.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
+                </div>
+                <button class="cursor-pointer hover:bg-[#fff] hover:text-dark-green  laptop:ml-[40rem]  tablet:ml-[10.77rem] border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff] mobile:hidden">contact us</button>
+                <div id="menu-btn" class="cursor-pointer mobile:w-[1.25rem] mobile:h-[1.0625rem] mobile:mt-1 tablet:hidden laptop:hidden">
+                    <img src='../assets/menu-white.svg'/>
+                </div>
+            </nav>
 
-    <div class="">
-        <h1 class="font-livvic font-bold text-[5rem]">This is the About page</h1>
-    
+            <div class="font-livvic text-[#fff] text-center mobile:flex mobile:flex-col mobile:gap-y-4">
+                <h1 class=" font-bold text-[2.5rem] leading-[2.5rem]">About</h1>
+                <p class="font-semibold leading-[1.75rem] mobile:w-[20.4375rem]">
+                    We help companies build dynamic teams made up of top global talent.
+                    Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. 
+                    We’ll bring those teams to you.
+                </p>
+            </div>
+        </div>
+        <img class="w-[12.5rem] h-[12.5rem] ml-[20.4rem]"src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
     </div>
-
 
 `;

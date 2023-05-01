@@ -18,7 +18,7 @@ document.querySelector('#footer-section').innerHTML= `
                 <p class="opacity-[60%]">Call Us: 949-833-7432</p>
             </div>
         </div>
-        <div class=" footerSection3-mobile  tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12 ">
+        <div class=" mobile:footerSection3-mobile  tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12 ">
             <div class="footerSvgElement-mobile tablet:flex tablet:flex-row gap-4 tablet:items-center laptop:flex laptop:flex-row laptop:self-end ">
                 <div>
                     <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24">

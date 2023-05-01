@@ -106,7 +106,7 @@ export default {
           width:'21.9375rem',
           display:'flex',
           flexDirection:'column',
-          rowGap:'0',
+          rowGap:'2rem',
           marginTop:'4rem'
         },
 
