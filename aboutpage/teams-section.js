@@ -1,6 +1,6 @@
 document.querySelector('#teams-section').innerHTML=`
 
-    <div class="mobile:flex mobile:flex-col mobile:overflow-hidden">
+    <div class="mobile:flex mobile:flex-col mobile:overflow-hidden tablet:hidden">
         <div class="-mt-[6.8rem] -ml-[6.5rem] ">
             <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
         </div>
