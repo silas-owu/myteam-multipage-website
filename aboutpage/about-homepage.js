@@ -16,7 +16,7 @@ document.querySelector("#about-page").innerHTML= `
                 </div>
             </nav>
 
-            <div class="font-livvic text-[#fff] text-center border-2 border-dashed border-[#8aa] tablet:flex tablet:flex-col tablet:h-[15rem] tablet:gap-y-[1.7rem] tablet:w-[28.5625rem] tablet:mx-auto mobile:flex mobile:flex-col mobile:gap-y-4">
+            <div class="font-livvic text-[#fff] text-center tablet:flex tablet:flex-col tablet:h-[15rem] tablet:gap-y-[1.7rem] tablet:w-[28.5625rem] tablet:mx-auto mobile:flex mobile:flex-col mobile:gap-y-4">
                 <h1 class=" font-bold text-[2.5rem] leading-[2.5rem]">About</h1>
                 <p class="font-semibold leading-[1.75rem] tablet:h-[8.75rem] tablet:w-[27.5625rem] mobile:w-[20.4375rem]">
                     We help companies build dynamic teams made up of top global talent.
@@ -25,7 +25,7 @@ document.querySelector("#about-page").innerHTML= `
                 </p>
             </div>
         </div>
-        <img class="w-[12.5rem] h-[12.5rem] ml-[20.4rem] tablet:hidden"src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+        <img class="w-[12.5rem] h-[12.5rem] mobile:ml-[20.4rem]  tablet:ml-[42rem] tablet:mt-[-5.5rem] "src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
     </div>
 
 `;
