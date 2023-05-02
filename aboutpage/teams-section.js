@@ -1,17 +1,17 @@
 document.querySelector('#teams-section').innerHTML=`
 
-    <div class="mobile:flex mobile:flex-col mobile:overflow-hidden tablet:hidden">
-        <div class="-mt-[6.8rem] -ml-[6.5rem] ">
+    <div class=" tablet:overflow-hidden  tablet:flex tablet:flex-col mobile:flex mobile:flex-col mobile:overflow-hidden ">
+        <div class="tablet:-ml-[6.5rem] tablet:mr-auto mobile:-mt-[6.8rem] mobile:-ml-[6.5rem] ">
             <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
         </div>
-        <div class="mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-16">
+        <div class="tablet:mx-[6.125rem] tablet:flex tablet:flex-col tablet:mt-0 border-dashed border-2 border-[#1aa] tablet:w-[35.8125] mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-4 ">
             <h2 class="font-livvic text-[#fff] text-[2rem] font-bold text-center ">Meet the directors</h2>
-            <div class="mobile:flex mobile:flex-col mobile:gap-y-20 chldren:mobile:w-[20.4375rem] children:mobile:h-[17.5625rem] ">
+            <div class="tablet:grid tablet:grid-cols-2 tablet:h-[58.6875rem] tablet:gap-x-4 mobile:flex mobile:flex-col mobile:gap-y-[1.68rem] chldren:w-[20.4375rem] children:h-[17.5625rem] ">
                 <div>
-                    <div class="bg-sacramento font-livvic mobile:teamscontainer ">
-                        <img class="mobile:avatar" src='../assets/avatar-nikita.jpg'/>
+                    <div class="bg-sacramento font-livvic h-[15.8125rem] flex flex-col mobile:teamscontainer ">
+                        <img class="avatar" src='../assets/avatar-nikita.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue mobile:avatarText ">Nikita Marks</h3>
+                            <h3 class=" text-rapture-blue avatarText ">Nikita Marks</h3>
                             <p class="font-italic text-[#fff]">Founder & CEO</p>
                         </div>
                     </div>
@@ -23,10 +23,10 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic mobile:teamscontainer ">
-                        <img class="mobile:avatar" src='../assets/avatar-christian.jpg'/>
+                    <div class="bg-sacramento h-[15.8125rem] flex flex-col font-livvic mobile:teamscontainer ">
+                        <img class="avatar" src='../assets/avatar-christian.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue mobile:avatarText ">Cristian Duncan</h3>
+                            <h3 class=" text-rapture-blue avatarText ">Cristian Duncan</h3>
                             <p class="font-italic text-[#fff]">Co-founder & COO</p>
                         </div>
                     </div>
@@ -38,10 +38,10 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic mobile:teamscontainer ">
-                        <img class="mobile:avatar" src='../assets/avatar-cruz.jpg'/>
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
+                        <img class="avatar" src='../assets/avatar-cruz.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue mobile:avatarText ">Cruz Hamer</h3>
+                            <h3 class=" text-rapture-blue avatarText ">Cruz Hamer</h3>
                             <p class="font-italic text-[#fff]">Co-founder & CTO</p>
                         </div>
                     </div>
@@ -53,10 +53,25 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic mobile:teamscontainer ">
-                        <img class="mobile:avatar" src='../assets/avatar-griffin.jpg'/>
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
+                        <img class="avatar" src='../assets/avatar-drake.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue mobile:avatarText ">Griffin Wise</h3>
+                            <h3 class=" text-rapture-blue avatarText ">Drake Heaton</h3>
+                            <p class="font-italic text-[#fff]">Business Developement Lead</p>
+                        </div>
+                    </div>
+                    <div class="avatarplus ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer ">
+                        <img class="avatar" src='../assets/avatar-griffin.jpg'/>
+                        <div class="text-center  mobile:mt-4">
+                            <h3 class=" text-rapture-blue avatarText ">Griffin Wise</h3>
                             <p class="font-italic text-[#fff]">Lead Marketing</p>
                         </div>
                     </div>
@@ -68,9 +83,9 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic mobile:teamscontainer ">
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
                         <div class="text-center  mobile:mt-8">
-                            <h3 class=" text-rapture-blue mobile:avatarText ">Aden Allan</h3>
+                            <h3 class=" text-rapture-blue avatarText ">Aden Allan</h3>
                             <p class="font-italic text-[#fff] w-[14.625rem] mx-auto text-[1rem] font-semibold leading-6">
                             “Empowered teams create truly amazing products.
                              Set the north star and let them follow it.”
@@ -94,7 +109,7 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
             </div>
         </div>
-        <div class="mobile:ml-auto">
+        <div class="tablet:ml-[39rem] mobile:ml-auto">
             <img src='../public/assets/bg-pattern-home-4-about-3.svg'/>
         </div>
     </div>
