@@ -8,7 +8,7 @@ document.querySelector('#footer-section').innerHTML= `
                 </div>
                 <div class="flex flex-row mobile:gap-8 tablet:gap-3 laptop:gap-10">
                     <h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem] hover:text-light-coral cursor-pointer">home</h2>
-                    <h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem]  hover:text-light-coral cursor-pointer">about</h2>
+                    <a href="./aboutpage.html"><h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem]  hover:text-light-coral cor-pointer">about</h2>
                 </div>
             </div>
             <div class="footerSection2-mobile font-livvic font-semibold text-[0.9375rem] text-[#fff] leading-[1.5625rem]  tablet:text-right laptop:self-center">
