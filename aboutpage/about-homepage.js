@@ -1,7 +1,7 @@
 document.querySelector("#about-page").innerHTML= `
 
-    <div class="flex flex-col mobile:overflow-hidden">
-        <div class="tablet:mt-[4rem] tablet:mx-[2.4375rem] tablet:flex tablet:gap-y-[5rem] tablet:flex-col tablet:h-[23.75rem] tablet:w-[43.0625rem] mobile:w-[20.44rem] mobile:mx-12 mobile:flex mobile:flex-col mobile:mt-[3rem] mobile:gap-y-20">
+    <div class="flex flex-col  overflow-hidden">
+        <div class="border-2 border-dashed border-[#aea] laptop:mx-[10.3125rem] laptop:h-[20.25rem] laptop:w-[69.375rem] tablet:mt-[4rem] tablet:mx-[2.4375rem]  tablet:flex tablet:gap-y-[5rem] tablet:flex-col tablet:h-[23.75rem] tablet:w-[43.0625rem] mobile:w-[20.44rem] mobile:mx-12 mobile:flex mobile:flex-col mobile:mt-[3rem] mobile:gap-y-20">
             <nav class="flex flex-row nav-mobile tablet:items-center">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -25,7 +25,7 @@ document.querySelector("#about-page").innerHTML= `
                 </p>
             </div>
         </div>
-        <img class="w-[12.5rem] h-[12.5rem] mobile:ml-[20.4rem]  tablet:ml-[42rem] tablet:mt-[-5.5rem] "src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+        <img class="w-[12.5rem] h-[12.5rem] mobile:ml-[20.4rem]  tablet:ml-[42rem] tablet:mt-[-5.5rem] laptop:hidden" src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
     </div>
 
 `;
