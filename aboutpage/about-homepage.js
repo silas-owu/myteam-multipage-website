@@ -19,7 +19,8 @@ document.querySelector("#about-page").innerHTML= `
             <div class="font-livvic text-[#fff] text-center laptop:flex laptop:flex-row laptop:gap-12 tablet:flex tablet:flex-col  tablet:h-[15rem] tablet:gap-y-[1.7rem] tablet:w-[28.5625rem] tablet:mx-auto mobile:flex mobile:flex-col mobile:gap-y-4">
                 <h1 class="laptop:w-[21.875rem] font-bold text-[2.5rem] leading-[2.5rem]">About</h1>
 
-                <div class="laptop:flex laptop:flex-col">
+                <div class="laptop:flex laptop:flex-col laptop:gap-y-10">
+                    <div class="laptop:w-[3.125rem] laptop:h-1 laptop:bg-light-coral tablet:hidden mobile:hidden" ></div>
                     <p class="font-semibold leading-[1.75rem] laptop:text-left tablet:h-[8.75rem] tablet:w-[27.5625rem] mobile:w-[20.4375rem]">
                         We help companies build dynamic teams made up of top global talent.
                         Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. 
