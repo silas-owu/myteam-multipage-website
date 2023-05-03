@@ -1,7 +1,7 @@
 document.querySelector('#landing-page').innerHTML=`
 
     <div class=" mobile:flex mobile:flex-col">
-        <div class="mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:h-[62.375rem] mobile:mx-6  mobile:gap-y-8 mobile:mt-[3rem] children:border-2 children:border-dashed children:border-[#4AA]">
+        <div class="mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:h-[65rem] mobile:mx-6   mobile:mt-[3rem]">
             <nav class="flex flex-row nav-mobile tablet:items-center">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -17,9 +17,9 @@ document.querySelector('#landing-page').innerHTML=`
             </nav>
             <div class="mobile:flex mobile:flex-col">
                 <div class="font-livvic mobile:flex mobile:flex-col mobile:gap-y-4">
-                    <h1 class=" text-[2.5rem] leading-[2.5rem] text-center text-[#fff]">Contact</h1>
-                    <h1 class="text-light-coral text-[2.5rem] leading-[2.5rem] text-center">Ask us about</h1>
-                    <div class=" mobile:flex mobile:flex-col mobile:gap-y- text-[#fff]">
+                    <h1 class=" text-[2.5rem] leading-[2.5rem] text-center text-[#fff] font-bold">Contact</h1>
+                    <h1 class="text-light-coral text-[2.5rem] leading-[2.5rem] text-center font-bold">Ask us about</h1>
+                    <div class=" mobile:flex mobile:flex-col mobile:gap-y-4 mobile:mt-8 text-[#fff]">
                         <div class="mobile:flex mobile:flex-row mobile:gap-4">
                             <img src ='../assets/icon-person.svg'/>
                             <p class="font-bold text-[1.125rem] leading-[1.75rem]">The quality of our talent network</p>
@@ -34,7 +34,8 @@ document.querySelector('#landing-page').innerHTML=`
                         </div>                       
                     </div>
                 </div>
-                <div></div>
+                <form class="">
+                </form>
             </div>  
         </div>
         <img class="mobile:hidden" src='../public/assets/bg-pattern-contact-2.svg'/>
