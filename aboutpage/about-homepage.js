@@ -2,7 +2,7 @@ document.querySelector("#about-page").innerHTML= `
 
     <div class="flex flex-col  overflow-hidden">
         <div class=" laptop:mx-[10.3125rem] laptop:mt-[4.5625rem] laptop:h-[20.25rem] laptop:w-[69.375rem] laptop:flex laptop:flex-col laptop:gap-y-[7.5rem] tablet:mt-[4rem] tablet:mx-[2.4375rem]  tablet:flex tablet:gap-y-[5rem] tablet:flex-col tablet:h-[23.75rem] tablet:w-[43.0625rem] mobile:w-[20.44rem] mobile:mx-12 mobile:flex mobile:flex-col mobile:mt-[3rem] mobile:gap-y-20">
-            <nav class="flex flex-row nav-mobile tablet:items-center laptop:items-center ">
+            <nav class="flex flex-row nav-mobile tablet:items-center laptop:items-center">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
                 </div>
