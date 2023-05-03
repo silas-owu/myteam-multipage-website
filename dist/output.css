@@ -1344,6 +1344,10 @@ video {
     grid-template-rows: 5rem 13.125rem;
   }
 
+  .mobile\:grid-rows-\[70\.75rem_27rem\] {
+    grid-template-rows: 70.75rem 27rem;
+  }
+
   .mobile\:flex-row {
     flex-direction: row;
   }
