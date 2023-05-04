@@ -1,8 +1,8 @@
 document.querySelector('#landing-page').innerHTML=`
 
     <div class=" mobile:flex mobile:flex-col  overflow-hidden">
-        <img class="mobile:hidden tablet:relative tablet:left-[-8rem] tablet:top-[11rem]" src='../assets/bg-pattern-about-2-contact-1.svg'/>
-        <div class="tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:mx-12 mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
+        <img class="mobile:hidden relative laptop:top-[14.3rem] left-[-8rem]  tablet:top-[11rem]" src='../assets/bg-pattern-about-2-contact-1.svg'/>
+        <div class="border-2 border-dashed border-[#0cf] laptop:flex laptop:flex-col laptop:gap-y-[7.5rem]  laptop:mx-[10.3125rem]  laptop:mt-[-10rem] tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:mx-12 mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
             <nav class="flex flex-row nav-mobile tablet:items-center tablet:w-[43.0625rem] tablet:mx-10 ">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -16,27 +16,27 @@ document.querySelector('#landing-page').innerHTML=`
                     <img src='../assets/menu-white.svg'/>
                 </div>
             </nav>
-            <div class="border-2 border-dashed border-[#0cf] tablet:flex tablet:flex-col tablet:w-[33.875rem] tablet:mx-[7.0625rem]  tablet:gap-y-16 mobile:flex mobile:flex-col mobile:gap-y-10 ">
-                <div class="tablet:gap-y-5 font-livvic flex flex-col mobile:gap-y-4">
-                    <h1 class="tablet:text-[4rem] text-[2.5rem] leading-[2.5rem] text-center text-[#fff] font-bold">Contact</h1>
-                    <h1 class="text-light-coral tablet:text-[2rem] tablet:leading-[3rem] text-[2.5rem] leading-[2.5rem] text-center font-bold">Ask us about</h1>
-                    <div class="tablet:gap-y-6 flex flex-col mobile:gap-y-8 mobile:mt-8 text-[#fff]">
-                        <div class="tablet:contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
+            <div class="laptop:flex laptop:flex-row laptop:justify-between tablet:flex tablet:flex-col tablet:w-[33.875rem] tablet:mx-[7.0625rem]  tablet:gap-y-16 mobile:flex mobile:flex-col mobile:gap-y-10 ">
+                <div class="laptop:flex laptop:flex-col laptop:gap-y-10 tablet:gap-y-5 font-livvic flex flex-col mobile:gap-y-4">
+                    <h1 class="laptop:text-left tablet:text-[4rem] text-[2.5rem] leading-[2.5rem] text-center text-[#fff] font-bold">Contact</h1>
+                    <h1 class="laptop:text-left text-light-coral tablet:text-[2rem] tablet:leading-[3rem] text-[2.5rem] leading-[2.5rem] text-center font-bold">Ask us about</h1>
+                    <div class="gap-y-6 flex flex-col mobile:gap-y-8 mobile:mt-8 text-[#fff]">
+                        <div class="contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
                             <img src ='../assets/icon-person.svg'/>
                             <p class="font-bold text-[1.125rem] leading-[1.75rem]">The quality of our talent network</p>
                         </div>
-                        <div class="tablet:contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
+                        <div class="contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
                             <img src ='../assets/icon-cog.svg'/>
                             <p class="font-bold text-[1.125rem] leading-[1.75rem] ">Usage & Implementation of our software</p>
                         </div>
-                        <div class="tablet:contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
+                        <div class="contact-avatar mobile:flex mobile:flex-row mobile:gap-4">
                             <img src ='../assets/icon-chart.svg'/>
                             <p class="font-bold text-[1.125rem] leading-[1.75rem]">How we help drive innovation</p>
                         </div>                       
                     </div>
                 </div>
-                <form method="POST" class="tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
-                    <input type="text" id="name" name="name" placeholder="Name" class=" mobile:h-[2.625rem] bg-transparent border-b border-black">
+                <form method="POST" class="laptop:w-[33.875rem] tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
+                    <input type="text" id="name" name="name" placeholder="Name" class=" mobile:h-[2.625rem] border-b  bg-none ">
                     <input type="email" id="email" name="email" placeholder="Email Address" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
                     <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
                     <input type="text" id="name" name="name" placeholder="Title" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
