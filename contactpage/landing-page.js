@@ -1,8 +1,8 @@
 document.querySelector('#landing-page').innerHTML=`
 
-    <div class="overflow-hidden mobile:flex mobile:flex-col mobile:mx-auto">
+    <div class=" mobile:flex mobile:flex-col  overflow-hidden">
         <img class="mobile:hidden tablet:relative tablet:left-[-8rem] tablet:top-[11rem]" src='../assets/bg-pattern-about-2-contact-1.svg'/>
-        <div class="tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
+        <div class="tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:mx-12 mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
             <nav class="flex flex-row nav-mobile tablet:items-center tablet:w-[43.0625rem] tablet:mx-10 ">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -41,11 +41,11 @@ document.querySelector('#landing-page').innerHTML=`
                     <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
                     <input type="text" id="name" name="name" placeholder="Title" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
                     <textarea type="text" name="message" placeholder="Message" rows=4></textarea>
-                    <button class="h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
+                    <button class="h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
     
                 </form>
             </div>  
         </div>
-        <img class="mobile:hidden tablet:relative tablet:ml-auto tablet:right-[-7rem] tablet:bottom-9" src='../public/assets/bg-pattern-contact-2.svg'/>
+        <img class="w-[14.0625rem] h-[12.5rem]  mobile:bottom-[2.3rem] mobile:left-[20rem] mobile:relative tablet:relative tablet:ml-auto tablet:right-[-7rem] tablet:bottom-9" src='../assets/bg-pattern-contact-2.svg'/>
     </div>
 `;

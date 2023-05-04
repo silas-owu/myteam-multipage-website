@@ -718,6 +718,10 @@ video {
   height: 7.875rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -764,6 +768,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[14\.\] {
+  width: 14.;
+}
+
+.w-\[14\.0625rem\] {
+  width: 14.0625rem;
 }
 
 .cursor-pointer {
@@ -1130,12 +1146,104 @@ video {
     position: fixed;
   }
 
+  .mobile\:relative {
+    position: relative;
+  }
+
   .mobile\:inset-0 {
     inset: 0px;
   }
 
   .mobile\:left-\[19rem\] {
     left: 19rem;
+  }
+
+  .mobile\:bottom-\[\] {
+    bottom: ;
+  }
+
+  .mobile\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .mobile\:right-\[\] {
+    right: ;
+  }
+
+  .mobile\:right-8 {
+    right: 2rem;
+  }
+
+  .mobile\:left-8 {
+    left: 2rem;
+  }
+
+  .mobile\:left-12 {
+    left: 3rem;
+  }
+
+  .mobile\:left-\[\] {
+    left: ;
+  }
+
+  .mobile\:left-\[-\] {
+    left: -;
+  }
+
+  .mobile\:left-\[-2\] {
+    left: -2;
+  }
+
+  .mobile\:left-\[-2\=\] {
+    left: -2=;
+  }
+
+  .mobile\:left-\[-1\] {
+    left: -1;
+  }
+
+  .mobile\:left-\[-10\] {
+    left: -10;
+  }
+
+  .mobile\:left-\[-10RE\] {
+    left: -10RE;
+  }
+
+  .mobile\:left-\[-10rem\] {
+    left: -10rem;
+  }
+
+  .mobile\:left-\[-rem\] {
+    left: -rem;
+  }
+
+  .mobile\:left-\[-15remrem\] {
+    left: -15remrem;
+  }
+
+  .mobile\:left-\[-15rem\] {
+    left: -15rem;
+  }
+
+  .mobile\:left-\[-20rem\] {
+    left: -20rem;
+  }
+
+  .mobile\:left-\[0rem\] {
+    left: 0rem;
+  }
+
+  .mobile\:left-\[20rem\] {
+    left: 20rem;
+  }
+
+  .mobile\:bottom-\[2\] {
+    bottom: 2;
+  }
+
+  .mobile\:bottom-\[2\.3rem\] {
+    bottom: 2.3rem;
   }
 
   .mobile\:z-10 {
@@ -1184,6 +1292,16 @@ video {
   .mobile\:my-\[4rem\] {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .mobile\:mx-\[\] {
+    margin-left: ;
+    margin-right: ;
+  }
+
+  .mobile\:mx-\[1\] {
+    margin-left: 1;
+    margin-right: 1;
   }
 
   .mobile\:-ml-\[6\.5rem\] {
@@ -1264,6 +1382,14 @@ video {
 
   .mobile\:mt-\[4rem\] {
     margin-top: 4rem;
+  }
+
+  .mobile\:ml-\[\] {
+    margin-left: ;
+  }
+
+  .mobile\:ml-\[10rem\] {
+    margin-left: 10rem;
   }
 
   .mobile\:flex {
@@ -1522,6 +1648,12 @@ video {
     row-gap: 5.1875rem;
   }
 
+  @media (min-width: 200px) and (max-width: 427px) {
+    .mobile\:mobile\:gap-y-\[5\.1875rem\] {
+      row-gap: 5.1875rem;
+    }
+  }
+
   .mobile\:self-end {
     align-self: flex-end;
   }
@@ -1573,6 +1705,16 @@ video {
   .mobile\:py-\[4\.125rem\] {
     padding-top: 4.125rem;
     padding-bottom: 4.125rem;
+  }
+
+  .mobile\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .mobile\:px-\[0\] {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .mobile\:pr-\[0\.5rem\] {
