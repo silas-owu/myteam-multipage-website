@@ -51,6 +51,13 @@ export default {
       // include the style from the 
       //index.html/aboutpage.html or the parent pages
       addComponents({
+        '.contact-avatar':{
+          display:'flex',
+          flexDirection:'row',
+          alignItems: 'center',
+          gap:'1.4375rem'
+        },
+
         '.teamscontainer':{
           display:'flex',
           flexDirection:'column',
@@ -156,7 +163,7 @@ export default {
           justifyContent:'space-evenly'
         }
 
-      },['mobile'])
+      },['mobile','tablet'])
 
     })
   ]
