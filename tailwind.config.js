@@ -5,7 +5,7 @@ export default {
    content: [
     './homepage/*.js',
     './aboutpage/*.js',
-    './contact/*.js',
+    './contactpage/*.js',
     '*.html'],
  /*  options:{
     paths:{

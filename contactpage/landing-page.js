@@ -1,7 +1,7 @@
 document.querySelector('#landing-page').innerHTML=`
 
     <div class=" mobile:flex mobile:flex-col">
-        <div class="mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:h-[65rem] mobile:mx-6   mobile:mt-[3rem]">
+        <div class="mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:gap-y-[5.1875rem] mobile:h-[65rem] mobile:mx-6  mobile:mt-[3rem]">
             <nav class="flex flex-row nav-mobile tablet:items-center">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -15,11 +15,11 @@ document.querySelector('#landing-page').innerHTML=`
                     <img src='../assets/menu-white.svg'/>
                 </div>
             </nav>
-            <div class="mobile:flex mobile:flex-col">
+            <div class="mobile:flex mobile:flex-col mobile:gap-y-10">
                 <div class="font-livvic mobile:flex mobile:flex-col mobile:gap-y-4">
                     <h1 class=" text-[2.5rem] leading-[2.5rem] text-center text-[#fff] font-bold">Contact</h1>
                     <h1 class="text-light-coral text-[2.5rem] leading-[2.5rem] text-center font-bold">Ask us about</h1>
-                    <div class=" mobile:flex mobile:flex-col mobile:gap-y-4 mobile:mt-8 text-[#fff]">
+                    <div class=" mobile:flex mobile:flex-col mobile:gap-y-8 mobile:mt-8 text-[#fff]">
                         <div class="mobile:flex mobile:flex-row mobile:gap-4">
                             <img src ='../assets/icon-person.svg'/>
                             <p class="font-bold text-[1.125rem] leading-[1.75rem]">The quality of our talent network</p>
@@ -34,7 +34,14 @@ document.querySelector('#landing-page').innerHTML=`
                         </div>                       
                     </div>
                 </div>
-                <form class="">
+                <form method="POST" class="font-livvic font-semibold text-[#fff] text-opacity-60 mobile:flex mobile:flex-col  mobile:gap-y-6 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
+                    <input type="text" id="name" name="name" placeholder="Name" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <input type="email" id="email" name="email" placeholder="Email Address" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <input type="text" id="name" name="name" placeholder="Title" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <textarea type="text" name="message" placeholder="Message" rows=4></textarea>
+                    <button class="h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
+    
                 </form>
             </div>  
         </div>
