@@ -765,6 +765,26 @@ video {
   height: ;
 }
 
+.h-\[2\.625rem\] {
+  height: 2.625rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-\[5\.\] {
+  height: 5.;
+}
+
+.h-\[5\.25rem\] {
+  height: 5.25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3013,6 +3033,10 @@ video {
   @media (min-width: 427px) and (max-width: 768px) {
     .laptop\:tablet\:flex {
       display: flex;
+    }
+
+    .laptop\:tablet\:h-\[26\.25rem\] {
+      height: 26.25rem;
     }
   }
 }

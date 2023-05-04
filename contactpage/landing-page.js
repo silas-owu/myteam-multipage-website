@@ -35,11 +35,11 @@ document.querySelector('#landing-page').innerHTML=`
                         </div>                       
                     </div>
                 </div>
-                <form method="POST" class="laptop:w-[33.875rem] tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
-                    <input type="text" id="name" name="name" placeholder="Name" class=" mobile:h-[2.625rem] border-b  bg-none ">
-                    <input type="email" id="email" name="email" placeholder="Email Address" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
-                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
-                    <input type="text" id="name" name="name" placeholder="Title" class=" mobile:h-[2.625rem] bg-transparent border-[#fff]">
+                <form method="POST" class="laptop:w-[33.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
+                    <input type="text" id="name" name="name" placeholder="Name" class=" h-[2.625rem] border-b  bg-none ">
+                    <input type="email" id="email" name="email" placeholder="Email Address" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" h-[2.625rem] bg-transparent border-[#fff]">
+                    <input type="text" id="name" name="name" placeholder="Title" class="h-[2.625rem] bg-transparent border-[#fff]">
                     <textarea type="text" name="message" placeholder="Message" rows=4></textarea>
                     <button class="h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
     
