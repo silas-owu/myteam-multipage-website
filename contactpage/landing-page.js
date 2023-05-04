@@ -2,7 +2,7 @@ document.querySelector('#landing-page').innerHTML=`
 
     <div class=" mobile:flex mobile:flex-col  overflow-hidden">
         <img class="mobile:hidden relative laptop:top-[14.3rem] left-[-8rem]  tablet:top-[11rem]" src='../assets/bg-pattern-about-2-contact-1.svg'/>
-        <div class="border-2 border-dashed border-[#0cf] laptop:flex laptop:flex-col laptop:gap-y-[7.5rem]  laptop:mx-[10.3125rem]  laptop:mt-[-10rem] tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:mx-12 mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
+        <div class="laptop:flex laptop:flex-col laptop:gap-y-[7.5rem]  laptop:mx-[10.3125rem]  laptop:mt-[-10rem] tablet:mt-[-12.5rem] mobile:w-[20.4375rem] mobile:flex mobile:flex-col mobile:mx-12 mobile:gap-y-[5.1875rem] mobile:h-[65rem]   mobile:mt-[3rem] tablet:flex tablet:flex-col tablet:gap-y-28">
             <nav class="flex flex-row nav-mobile tablet:items-center tablet:w-[43.0625rem] tablet:mx-10 ">
                 <div class="logosize-mobile">
                     <img src='../assets/logo.svg'/>
@@ -35,7 +35,7 @@ document.querySelector('#landing-page').innerHTML=`
                         </div>                       
                     </div>
                 </div>
-                <form method="POST" class="laptop:w-[33.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] border-2 border-dashed border-[#4aa]">
+                <form method="POST" class="laptop:w-[33.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] ">
                     <input type="text" id="name" name="name" placeholder="Name" class=" h-[2.625rem] border-b  bg-none ">
                     <input type="email" id="email" name="email" placeholder="Email Address" class=" h-[2.625rem] bg-transparent border-[#fff]">
                     <input type="text" id="company-name" name="company-name" placeholder="Company Name" class=" h-[2.625rem] bg-transparent border-[#fff]">
