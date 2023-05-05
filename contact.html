@@ -8,9 +8,12 @@
     <title>MyTeam Multipage Website</title>
 </head>
 <body class="w-full min-h-screen p-0 m-0 border-box laptop:grid laptop:grid-rows-[49.3125rem_13rem] tablet:grid tablet:grid-rows-[75.25rem_16.9137rem] mobile:grid mobile:grid-rows-[70.75rem_27rem] ">
+    <div class="laptop:hidden tablet:hidden mobile:invisible mobile:w-full mobile:fixed mobile:inset-0 mobile:min-h-screen  mobile:z-[999]" id="homepage-modal"></div>
     <div class="flex flex-row bg-midnight-green" id="landing-page"></div>
     <div class="flex flex-row laptop:px-[10.3125rem] laptop:py-12 bg-dark-green mobile:py-[4.125rem] mobile:px-[1.5rem]" id="footer-section"></div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="./homepage/homepage-modal.js"></script>
+    <script type="module" src="./homepage/modal-helper.js"></script>
     <script type="module" src='./contactpage/landing-page.js'></script>
     <script type="module" src='./contactpage/footer-section.js'></script>
 </body>

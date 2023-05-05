@@ -45,6 +45,6 @@ document.querySelector('#landing-page').innerHTML=`
                 </form>
             </div>  
         </div>
-        <img class="w-[14.0625rem] h-[12.5rem]  bottom-[2.3rem] left-[7rem] relative laptop:bottom-[3.9rem] laptop:left-[8rem] laptop:ml-auto tablet:ml-auto tablet:right-[-7rem] tablet:bottom-9" src='../assets/bg-pattern-contact-2.svg'/>
+        <img class="w-[14.0625rem] h-[12.5rem]  bottom-[2.3rem]  mobile:left-[20rem] relative laptop:bottom-[3.9rem] laptop:left-[8rem] laptop:ml-auto tablet:ml-auto tablet:right-[-7rem] tablet:bottom-9" src='../assets/bg-pattern-contact-2.svg'/>
     </div>
 `;
