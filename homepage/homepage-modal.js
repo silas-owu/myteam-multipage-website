@@ -1,6 +1,6 @@
 document.querySelector('#homepage-modal').innerHTML=`
     <div class="mobile:fixed mobile:w-full mobile:h-full mobile:bg-[#000]/60">
-        <div class="mobile:px-12 mobile:fixed mobile:inset-0 mobile:w-[15.9375rem] mobile:bg-police-blue mobile:ml-auto mobile:flex mobile:flex-col mobile:gap-[15rem]  mobile:border-dashed mobile:border-2 mobile:border-[#332b94]" >
+        <div class="mobile:px-12 mobile:fixed mobile:inset-0 mobile:w-[15.9375rem] mobile:bg-police-blue mobile:ml-auto mobile:flex mobile:flex-col mobile:gap-[15rem]" >
             <div class="mobile:gap-y-[2.375rem] mobile:w-[11.3rem] mobile: mobile:flex mobile:flex-col   mobile:mt-[3.523125rem]  mobile:h-[17rem]">
                 <div id="close-btn" class="mobile:w-[1.01625rem] mobile:h-[1.01625rem] mobile:ml-auto ">
                     <img src='../assets/icon-close.svg'/>

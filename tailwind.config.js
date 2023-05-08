@@ -7,16 +7,7 @@ export default {
     './aboutpage/*.js',
     './contactpage/*.js',
     '*.html'],
- /*  options:{
-    paths:{
-      fonts:[
-        './public/Fonts/Livvic-Bold.ttf',
-        './public/Fonts/Livvic-SemiBold.ttf'
-      ]
-    }
-  } */
-
-  theme: {
+   theme: {
     fontFamily:{
       'livvic' :['Livvic', 'sans-serif']
     },
@@ -39,6 +30,9 @@ export default {
       'onahau':'#C4FFFE'
     },
     extend: {
+      placeholderColor: theme => ({
+        'red': '',
+      }),
     },
   },
 

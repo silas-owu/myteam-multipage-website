@@ -35,13 +35,13 @@ document.querySelector('#landing-page').innerHTML=`
                         </div>                       
                     </div>
                 </div>
-                <form action="https://formsubmit.co/el/guvuna" method="POST" class="laptop:w-[33.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] ">
-                    <input type="text" id="name" name="name" placeholder="Name" required  class=" h-[2.625rem] bg-[#000] bg-opacity-10 p-4 focus:outline-none">
-                    <input type="email" id="email" name="email" placeholder="Email Address" required  class=" h-[2.625rem] bg-[#000] border-[#fff] p-4 bg-opacity-10 focus:outline-none">
-                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" required  class=" h-[2.625rem] bg-[#000] bg-opacity-10 border-[#fff] p-4 focus:outline-none">
-                    <input type="text" id="title" name="name" placeholder="Title" class="h-[2.625rem] bg-[#000] bg-opacity-10 border-[#fff] p-4 focus:outline-none">
-                    <textarea type="text" id="message" name="message" placeholder="Message" rows=4 class="bg-[#000] bg-opacity-10 p-4 focus:outline-none"></textarea>
-                    <button class="h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
+                <form action="https://formsubmit.co/9481f5569173021a64eb760130c85eda" method="POST" id="form"  class="laptop:w-[33.875rem] laptop:gap-y-6 tablet:h-[26.25rem] font-livvic font-semibold text-[#fff] text-opacity-60 flex flex-col  tablet:gap-y-10 mobile:gap-y-4 mobile:h-[26.25rem] ">
+                    <input type="text" id="full-name" name="fullname" placeholder="Name" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+                    <input type="text" id="role" name="role" placeholder="Title" class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
+                    <textarea type="text" id="message" name="message" placeholder="Message" rows=4 class="hover:border-b hover:border-rapture-blue bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-10 focus:outline-none"></textarea>
+                    <button id="submit" class="hover:bg-rapture-blue h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
                 </form>
             </div>  
         </div>
