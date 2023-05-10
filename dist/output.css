@@ -694,6 +694,14 @@ video {
   margin-top: ;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -782,6 +790,10 @@ video {
   height: 38rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -860,6 +872,14 @@ video {
 
 .w-\[2rem\] {
   width: 2rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .cursor-pointer {
@@ -1044,8 +1064,24 @@ video {
   --tw-bg-opacity: 0;
 }
 
+.fill-\[\#fff\] {
+  fill: #fff;
+}
+
+.fill-\[\] {
+  fill: ;
+}
+
+.fill-light-coral {
+  fill: #F67E7E;
+}
+
 .stroke-\[\#fff\] {
   stroke: #fff;
+}
+
+.stroke-sacramento {
+  stroke: #012f34;
 }
 
 .stroke-\[\] {
@@ -2345,6 +2381,38 @@ video {
 
   .laptop\:mt-\[9rem\] {
     margin-top: 9rem;
+  }
+
+  .laptop\:mt-\[-78\.7rem\] {
+    margin-top: -78.7rem;
+  }
+
+  .laptop\:mt-\[-7\.7rem\] {
+    margin-top: -7.7rem;
+  }
+
+  .laptop\:mt-\[-8\.7rem\] {
+    margin-top: -8.7rem;
+  }
+
+  .laptop\:mt-\[-10\.7rem\] {
+    margin-top: -10.7rem;
+  }
+
+  .laptop\:mt-\[-1rem\] {
+    margin-top: -1rem;
+  }
+
+  .laptop\:mt-\[-11rem\] {
+    margin-top: -11rem;
+  }
+
+  .laptop\:mt-\[-12rem\] {
+    margin-top: -12rem;
+  }
+
+  .laptop\:mt-\[-11\.8rem\] {
+    margin-top: -11.8rem;
   }
 
   .laptop\:flex {
