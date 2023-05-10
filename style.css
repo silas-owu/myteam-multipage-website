@@ -6,3 +6,7 @@
   /* font-family: 'Livvic'; */
   /* src: url('./public/Fonts/Livvic-Bold.ttf'); */
 /* } */
+
+.my-class {
+  @apply laptop:w-[69.375rem] laptop:h-[38rem];
+}

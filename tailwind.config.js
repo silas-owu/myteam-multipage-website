@@ -31,7 +31,7 @@ export default {
     },
     extend: {
       placeholderColor: theme => ({
-        'red': '',
+        'red': '#ff0000',
       }),
     },
   },
