@@ -14,7 +14,7 @@ document.querySelector('#teams-section').innerHTML=`
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </div>
-        <div id="add-btn" class="w-6 h-6 relative ml-[84rem] mt-8 avatarplus hover:rapture-blue hover:cursor-pointer">
+        <div id="add-btn" class="hover:border-2 hover:border-solid hover:border-[#FF9C9C]  w-6 h-6 relative ml-[84rem] mt-8 avatarplus hover:rapture-blue hover:cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-6 fill-[#fff]">
                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
             </svg>

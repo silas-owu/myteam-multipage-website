@@ -1,7 +1,8 @@
+//Function to handle DOM manipulations
 $(function() {
     $('#cancel-btn').addClass('hidden');
     $('#add-btn').addClass('hidden');
-    const newText= $('<h3 class="text-[#c2f] text-[2rem] border-dashed border-2 border-[#18c]">Hello ! I am a new page</h3>')
+    const newText= $('<h3 class="text-[#c2f] text-[2rem] border-dashed border-2 border-[#18c]">Hello ! ,Add with plus icon</h3>')
     const $newTeamContainer=  $('<div>').addClass('bg-sacramento w-[69.375rem] h-[38rem]');
 
     //Event listener for  edit-btn function
@@ -26,10 +27,6 @@ $(function() {
         $('#add-btn').addClass('hidden');
         $('#teams-container').css({
             marginTop: '-4.7rem'
-        })
+        });
     });
-
-    // $('#teams-profile').css('visibility','visible') ? 
-    // $('#add-btn').addClass('hidden') && $('#cancel-btn').addClass('hidden'):
-    // $('#add-btn').addClass('visible') && $('#cancel-btn').addClass('visible');
 });
