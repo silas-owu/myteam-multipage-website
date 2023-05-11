@@ -698,6 +698,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -778,6 +786,10 @@ video {
   height: 100%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -844,6 +856,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .cursor-pointer {
@@ -1004,6 +1020,11 @@ video {
   background-color: rgb(1 47 52 / var(--tw-bg-opacity));
 }
 
+.bg-police-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 98 105 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -1149,6 +1170,19 @@ video {
 .text-sacramento {
   --tw-text-opacity: 1;
   color: rgb(1 47 52 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#e\] {
+  color: #e;
+}
+
+.text-\[\#eab\] {
+  --tw-text-opacity: 1;
+  color: rgb(238 170 187 / var(--tw-text-opacity));
 }
 
 .text-opacity-60 {
