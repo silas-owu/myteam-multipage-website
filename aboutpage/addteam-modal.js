@@ -8,23 +8,23 @@ $(function(){
     //addteam-card
     const $addteamModal =$('<div class="w-full h-full bg-dark-green bg-opacity-60 text-[#fff] pt-[6rem] block=="></div>')
     const $addteamCard = $(`
-        <div class="grid grid-cols-2 mx-auto children:border-2  bg-midnight-green w-[66rem] h-[40rem] text-[#eab]">
-            <div class=" children:border-2 px-6 py-10">
-                <div class="h-[35rem] flex flex-col gap-y-11">
-                    <div class="mx-auto border-2 border-rapture-blue rounded-full w-[9.6rem] h-[9.6rem]">
-                        <svg class="mt-[7.5rem] ml-[8.9rem] w-8 h-8 hover:stroke-light-coral stroke-rapture-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <div class="grid grid-cols-2 mx-auto   bg-midnight-green w-[66rem] h-[40rem] text-[#eab]">
+            <div class="px-6 py-10">
+                <div class="h-[35rem] flex flex-col gap-y-9">
+                    <div id="user-image"  class="mx-auto border-2 border-police-blue rounded-full w-[9.6rem] h-[9.6rem]">
+                        <svg id="addimage-btn"  class=" mt-[7.5rem] ml-[8.9rem] w-8 h-8 hover:stroke-rapture-blue stroke-police-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
                         </svg>
                     </div>
-                    <div class="h-[22.5rem] border-2">
-                        <form class="font-libre font-bold flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:focus-outline-none children:border-b children:border-rapture-blue">
-                            <input  class="p-3" type="text" id="full-name" name="Fullname" placeholder="Full name:"/>
-                            <input  class="p-3" type="text" id="role" name="Fullname" placeholder="Role:"/>
-                            <input  class="p-3" type="text" id="experience" name="experiences" placeholder="Experiences:"/>
-                            <div id="socialmedia-section"  class=" hidden flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:focus-outline-none children:border-b children:border-rapture-blue">
-                            <input  class="p-3" type="text" id="twitter-link" name="twitter link" placeholder="Twitter link:"/>
-                            <input  class="p-3" type="text" id="linkedin-link" name="linkedin link" placeholder="LinkedIn link:"/>
-                            <input  class="p-3" type="text" id="other-link" name="other-link" placeholder="other links:"/>
+                    <div class="h-[22.5rem] border-2 mx-auto">
+                        <form class="font-libre font-bold flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:w-[25rem] children:border-b children:border-rapture-blue">
+                            <input  class="p-3 focus:outline-none" type="text" id="full-name" name="Fullname" placeholder="Full name:"/>
+                            <input  class="p-3 focus:outline-none" type="text" id="role" name="Fullname" placeholder="Role:"/>
+                            <input  class="p-3 focus:outline-none" type="text" id="experience" name="experiences" placeholder="Experiences:"/>
+                            <div id="socialmedia-section"  class=" flex  flex-col gap-y-4 children:h-[2.9rem]  children:focus-outline-none">
+                                <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="twitter-link" name="twitter link" placeholder="Twitter link:"/>
+                                <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="linkedin-link" name="linkedin link" placeholder="LinkedIn link:"/>
+                                <button   class="mx-auto bg-dark-green rounded-[5rem] text-rapture-blue  w-[12rem] p-2 text-center hover:bg-rapture-blue hover:text-dark-green " >save</button>
                             </div>
                         </form>
                     </div>
