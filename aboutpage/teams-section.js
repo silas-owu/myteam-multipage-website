@@ -4,17 +4,17 @@ document.querySelector('#teams-section').innerHTML=`
         <div class=" laptop:relative laptop:left-[-8rem] tablet:-ml-[6.5rem] tablet:mr-auto mobile:-mt-[6.8rem] mobile:-ml-[6.5rem] ">
             <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
         </div>
-        <div id="edit-btn"  class=" w-[1.5rem]   relative ml-[84rem] mt-2">
+        <div id="edit-btn"  class=" tablet:hidden mobile:hidden w-[1.5rem]   relative ml-[84rem] mt-2">
             <svg  class="hover:stroke-light-coral stroke-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
             </svg>
         </div>
-        <div id="cancel-btn" class="w-[1.5rem] relative ml-[84rem] mt-8">
+        <div id="cancel-btn" class="w-[1.5rem] relative ml-[84rem] mt-8 hidden">
             <svg class="stroke-[#fff] hover:stroke-light-coral"  xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </div>
-        <div id="add-btn" class="hover:border-2 hover:border-solid hover:border-[#FF9C9C]  w-6 h-6 relative ml-[84rem] mt-8 avatarplus hover:rapture-blue hover:cursor-pointer">
+        <div id="add-btn" class="hidden hover:border-2 hover:border-solid hover:border-[#FF9C9C]  w-6 h-6 relative ml-[84rem] mt-8 avatarplus hover:rapture-blue hover:cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-6 fill-[#fff]">
                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
             </svg>
@@ -24,11 +24,11 @@ document.querySelector('#teams-section').innerHTML=`
             <h2  id="teams-header"  class="font-livvic text-[#fff] text-[2rem] font-bold text-center mt-[-0.5rem]">Meet the TeaM</h2>
             <div id="teams-profile"  class="laptop:gap-8 laptop:w-[69.375rem] laptop:h-[38rem] laptop:grid laptop:grid-cols-3 tablet:grid tablet:grid-cols-2 tablet:h-[58.6875rem] tablet:gap-x-4 tablet:gap-y-2 mobile:flex mobile:flex-col mobile:gap-y-[1.68rem] chldren:w-[20.4375rem] children:h-[17.5625rem] ">
                 <div>
-                    <div class="bg-sacramento font-livvic h-[15.8125rem] flex flex-col mobile:teamscontainer ">
-                        <img class="avatar" src='../assets/avatar-nikita.jpg'/>
+                    <div  class=" bg-sacramento font-livvic h-[15.8125rem] flex flex-col mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-nikita.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Nikita Marks</h3>
-                            <p class="font-italic text-[#fff]">Founder & CEO</p>
+                            <h3 class=" text-rapture-blue avatarText profile-name">Nikita Marks</h3>
+                            <p class="font-italic text-[#fff] profile-role">Founder & CEO</p>
                         </div>
                     </div>
                     <div class="avatarplus hover:rapture-blue hover:cursor-pointer">
@@ -39,11 +39,11 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento h-[15.8125rem] flex flex-col font-livvic mobile:teamscontainer ">
-                        <img class="avatar" src='../assets/avatar-christian.jpg'/>
+                    <div class="bg-sacramento h-[15.8125rem] flex flex-col font-livvic mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-christian.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Cristian Duncan</h3>
-                            <p class="font-italic text-[#fff]">Co-founder & COO</p>
+                            <h3 class=" text-rapture-blue avatarText profile-name">Cristian Duncan</h3>
+                            <p class="font-italic text-[#fff]  profile-role">Co-founder & COO</p>
                         </div>
                     </div>
                     <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
@@ -54,11 +54,11 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
-                        <img class="avatar" src='../assets/avatar-cruz.jpg'/>
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-cruz.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Cruz Hamer</h3>
-                            <p class="font-italic text-[#fff]">Co-founder & CTO</p>
+                            <h3 class=" text-rapture-blue avatarText profile-name ">Cruz Hamer</h3>
+                            <p class="font-italic text-[#fff] profile-role">Co-founder & CTO</p>
                         </div>
                     </div>
                     <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
@@ -69,10 +69,10 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div>
-                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
-                        <img class="avatar" src='../assets/avatar-drake.jpg'/>
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-drake.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Drake Heaton</h3>
+                            <h3 class=" text-rapture-blue avatarText profile-name">Drake Heaton</h3>
                             <p class="font-italic text-[#fff]">Business Developement Lead</p>
                         </div>
                     </div>
@@ -111,11 +111,11 @@ document.querySelector('#teams-section').innerHTML=`
 
                 
                 <div class="tablet:hidden">
-                    <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer ">
-                        <img class="avatar" src='../assets/avatar-griffin.jpg'/>
+                    <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-griffin.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Griffin Wise</h3>
-                            <p class="font-italic text-[#fff]">Lead Marketing</p>
+                            <h3 class=" text-rapture-blue avatarText profile-name">Griffin Wise</h3>
+                            <p class="font-italic text-[#fff] profile-role">Lead Marketing</p>
                         </div>
                     </div>
                     <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
@@ -126,11 +126,11 @@ document.querySelector('#teams-section').innerHTML=`
                 </div>
 
                 <div class="mobile:hidden laptop:hidden">
-                    <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer ">
-                        <img class="avatar" src='../public/assets/avatar-aden.jpg'/>
+                    <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../public/assets/avatar-aden.jpg'/>
                         <div class="text-center  mobile:mt-4">
-                            <h3 class=" text-rapture-blue avatarText ">Aden Allen</h3>
-                            <p class="font-italic text-[#fff]">Head of Talent</p>
+                            <h3 class=" text-rapture-blue avatarText profile-name">Aden Allen</h3>
+                            <p class="font-italic text-[#fff] profile-role">Head of Talent</p>
                         </div>
                     </div>
                     <div class="avatarplus hover:bg-rapture-blue hover:cursor-pointer">
