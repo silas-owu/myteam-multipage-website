@@ -39,7 +39,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus hover:rapture-blue hover:cursor-pointer">
+                    <div  class="avatarplus hover:rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -62,7 +62,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
+                    <div   class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -85,7 +85,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
+                    <div  class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -108,7 +108,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
+                    <div  class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -134,7 +134,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </svg>
                         </div>
                     </div>
-                    <div class="avatarplus bg-rapture-blue">
+                    <div  class="avatarplus bg-rapture-blue">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
                             <path fill="##012f34" fill-rule="evenodd" d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"/>
                         </svg>
@@ -162,7 +162,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer">
+                    <div  class="avatarplus  hover:fill-rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -189,7 +189,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div class="avatarplus hover:bg-rapture-blue hover:cursor-pointer">
+                    <div  class="avatarplus hover:bg-rapture-blue hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>
@@ -214,7 +214,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </svg>
                         </div>
                     </div>
-                    <div class="avatarplus bg-rapture-blue hover:fill-light-coral hover:cursor-pointer">
+                    <div  class="avatarplus bg-rapture-blue hover:fill-light-coral hover:cursor-pointer up-profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
                             <path fill="##012f34" fill-rule="evenodd" d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"/>
                         </svg>

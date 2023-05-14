@@ -603,12 +603,20 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .bottom-\[2\.3rem\] {
@@ -1079,6 +1087,10 @@ video {
 
 .bg-opacity-\[97\%\] {
   --tw-bg-opacity: 97%;
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
 }
 
 .fill-\[\#fff\] {

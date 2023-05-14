@@ -44,8 +44,8 @@ $(function() {
         $('a.linkedIn-link').eq(currentIndex).attr( 'href',linkedInLink);
         currentIndex++;
         // console.log($profilename);
-            console.log(linkedInLink);
-    $('#addteam-modal').css('display', 'none');
+            // console.log(linkedInLink);
+        $('#addteam-modal').css('display', 'none');
     })
     
 });
