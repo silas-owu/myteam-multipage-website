@@ -30,31 +30,29 @@ $(function() {
         $('#user-name').text($username)
     })
  */
-    const $updateBtnAll = $('.update-btn');
-    const $updateModal = $('#update-modal');
+   /*  const $updateModal = $('#update-modal');
     const $image = $('#update-image');  
     const $role = $('#role');
     const $experienceInput = $('#experience-input');
     const $twitterUpdate = $('#twitter-update');
-    const $linkedinUpdate = $('#linkedin-update');
+    const $linkedinUpdate = $('#linkedin-update'); */
 
-    $updateBtnAll.each(()=>{
-        const button = $(this);
 
-        button.on('click',function(){
-            const $updateImage = button.closet('.profile-image').attr('src');
-            const $updateName = button.find('.profile-name').text();
-            const $updateRole = button.find('.profile-role').text();
-            const $updateTwitter = button.find('.twitter-update').attr('href')
-            const $updateLinkedIn = button.find('.linkedIn-update').attr('href')
+    $('.update-btn').on('click', (event)=>{
+        const $updateImage = $(event.currentTarget).closest('.profile-image').attr('src');
+        const $updateName = $(event.currentTarget).find('.profile-name').text();
+        const $updateRole = $(event.currentTarget).find('.profile-role').text();
+        const $updateTwitter = $(event.currentTarget).find('.twitter-update').attr('href');
+        const $updateLinkedIn = $(event.currentTarget).find('.linkedin-update').attr('href');
+ 
+        $('#update-image').attr('src', $updateImage);
+        $('#user-name').text($updateName);
+        $('#role-name').text($updateRole);
 
-            $('#update-image').attr('src',$updateImage);
-            $('#user-name').val($updateName)
-            $('#role-name').val($updateRole)
+        $('#update-modal').css('display', 'block');
 
-            $('#update-modal').hide();
-        })
-    })
+    });
+       
 
     $('#exit').on('click',()=>{
         $('#update-modal').css('display', 'none');
