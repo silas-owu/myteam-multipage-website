@@ -23,12 +23,47 @@ $(function() {
         }
     })
 
+
+  /*   $('#update-btn').on('click',()=>{
+        const $username = $('.profile-name').text()
+        $('#update-modal').css('display', 'block');
+        $('#user-name').text($username)
+    })
+ */
+    const $updateBtnAll = $('.update-btn');
+    const $updateModal = $('#update-modal');
+    const $image = $('#update-image');  
+    const $role = $('#role');
+    const $experienceInput = $('#experience-input');
+    const $twitterUpdate = $('#twitter-update');
+    const $linkedinUpdate = $('#linkedin-update');
+
+    $updateBtnAll.each(()=>{
+        const button = $(this);
+
+        button.on('click',function(){
+            const $updateImage = button.closet('.profile-image').attr('src');
+            const $updateName = button.find('.profile-name').text();
+            const $updateRole = button.find('.profile-role').text();
+            const $updateTwitter = button.find('.twitter-update').attr('href')
+            const $updateLinkedIn = button.find('.linkedIn-update').attr('href')
+
+            $('#update-image').attr('src',$updateImage);
+            $('#user-name').val($updateName)
+            $('#role-name').val($updateRole)
+
+            $('#update-modal').hide();
+        })
+    })
+
+    $('#exit').on('click',()=>{
+        $('#update-modal').css('display', 'none');
+    })
+
         let currentIndex = 0;
     //Save button to receive user's input and append to
     // teams-profile content by click
     $('#save-btn').on('click',(event)=>{
-
-        
         //receive user'input
         let image=$('#user-image').attr('src');
         let fullname = $('#full-name').val();
