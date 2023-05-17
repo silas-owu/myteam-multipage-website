@@ -19,12 +19,12 @@
                         </div>
                         <div class="h-[22.5rem]  mx-auto">
                             <div class="font-libre font-bold flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:w-[25rem] children:border-b children:border-rapture-blue">
-                                <input  class="p-3 focus:outline-none" type="text" id="full-name" name="Fullname" placeholder="Full name:"/>
-                                <input  class="p-3 focus:outline-none" type="text" id="role" name="Fullname" placeholder="Role:"/>
+                                <input  class="p-3 focus:outline-none" type="text" id="full-name" name="Fullname" required placeholder="Full name:"/>
+                                <input  class="p-3 focus:outline-none" type="text" id="role" name="Fullname" required placeholder="Role:"/>
                                 <input  class="p-3 focus:outline-none" type="text" id="experience" name="experiences" placeholder="Experiences:"/>
                                 <div id="socialmedia-section"  class=" flex  flex-col gap-y-4 children:h-[2.9rem]  children:focus-outline-none">
-                                    <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="twitter-link" name="twitter link" placeholder="Twitter link:"/>
-                                    <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="linkedin-link" name="linkedin link" placeholder="LinkedIn link:"/>
+                                    <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="twitter-link" name="twitter link" required  placeholder="Twitter link:"/>
+                                    <input  class="p-3 focus:outline-none bg-midnight-green border-b border-rapture-blue" type="text" id="linkedin-link" name="linkedin link" required placeholder="LinkedIn link:"/>
                                     <button id="save-btn"  class="mx-auto bg-dark-green rounded-[5rem] text-rapture-blue  w-[12rem] p-2 text-center hover:bg-rapture-blue hover:text-dark-green " >save</button>
                                 </div>
                             </div>

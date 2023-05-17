@@ -2,8 +2,9 @@ $(function() {
     const $titleID = $('#role');
     const $messageID = $('#message');
     const $submitBtn = $('#submit');
-    const $form = $('#form');
+    // const $form = $('#form');
 
+    
     
     $submitBtn.on('click',function(event){
         $titleID.val() === '' ? 
