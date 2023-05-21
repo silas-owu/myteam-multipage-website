@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //Eventhandler's functionalities for addteamModal form
     //Reading input file from user's desktop
-    const imageInput = document.getElementById('image-input');
+    const formImage = document.getElementById('image-input');
     imageInput.addEventListener('change',()=>{
         let imageFile = imageInput.files[0];
         const reader = new FileReader();
@@ -193,13 +193,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
             errorResponse();
         } else{
             resetStyles();
-            saveBtn.disabled = 'false';
+            saveBtn.disabled = false;
         }
     }
 
     saveBtn.addEventListener( 'click', ()=>{
         addteamModalValidation();
-
+        // console.log(saveBtn.disabled);
         if(!saveBtn.disabled){
             let currentIndex = 0;
             let imageInput = userImage.src;
