@@ -20,8 +20,8 @@ document.querySelector('#teams-section').innerHTML=`
             </svg>
         </div>
 
-        <div id="teams-container"  class="border-2 border-dashed border-[#ea5] laptop:mx-[10.3125rem] laptop:mt-[-4.7rem] tablet:mx-[6.125rem] laptop:flex laptop:flex-col laptop:gap-y-12 tablet:flex tablet:flex-col tablet:gap-y-10 tablet:mt-[-6rem] tablet:w-[35.8125rem] tablet:h-[68.6875rem] mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-4 ">
-            <h2  id="teams-header"  class="font-livvic text-[#fff] text-[2rem] font-bold text-center mt-[-0.5rem]">Meet the TeaM</h2>
+        <div id="teams-container"  class=" laptop:mx-[10.3125rem] laptop:mt-[-4.6rem] tablet:mx-[6.125rem] laptop:flex laptop:flex-col laptop:gap-y-12 tablet:flex tablet:flex-col tablet:gap-y-10 tablet:mt-[-6rem] tablet:w-[35.8125rem] tablet:h-[68.6875rem] mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-4 ">
+            <h2  id="teams-header"  class="font-livvic text-[#fff] text-[2rem] font-bold text-center mt-[-0.5rem]">Meet the Team</h2>
             <div id="teams-profile"  class="laptop:gap-8 laptop:w-[69.375rem] laptop:h-[38rem] laptop:grid laptop:grid-cols-3 tablet:grid tablet:grid-cols-2 tablet:h-[58.6875rem] tablet:gap-x-4 tablet:gap-y-2 mobile:flex mobile:flex-col mobile:gap-y-[1.68rem] chldren:w-[20.4375rem] children:h-[17.5625rem] ">
                 <div>
                     <div class=" bg-sacramento font-livvic h-[15.8125rem] flex flex-col mx-auto mobile:teamscontainer profile">
@@ -39,7 +39,7 @@ document.querySelector('#teams-section').innerHTML=`
                             </div>
                         </div>
                     </div>
-                    <div id="update-profile"class="avatarplus hover:rapture-blue hover:cursor-pointer update-btn">
+                    <div id="update-profile" class="avatarplus hover:rapture-blue hover:cursor-pointer update-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                             <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
                         </svg>

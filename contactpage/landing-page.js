@@ -41,7 +41,7 @@ document.querySelector('#landing-page').innerHTML=`
                     <input type="text" id="company-name" name="company-name" placeholder="Company Name" required  class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
                     <input type="text" id="role" name="role" placeholder="Title" class="hover:border-b hover:border-rapture-blue h-[2.625rem] bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-6 focus:outline-none focus:bg-opactiy-0 focus:pt-2">
                     <textarea type="text" id="message" name="message" placeholder="Message" rows=4 class="hover:border-b hover:border-rapture-blue bg-[#000] bg-opacity-0 border-b border-[#fff] pl-6 pb-10 focus:outline-none"></textarea>
-                    <button id="submit" class="hover:bg-rapture-blue h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
+                    <button id="submit" class="hover:bg-rapture-blue  hover:border-b hover:border-rapture-blue h-[3rem] w-[6.875rem] bg-[#FFF] rounded-[1.5rem] font-semibold text-[1.125rem] mobile:mt-8 leading-[1.75rem] text-deep-jungle-green border-[0.125rem] border-solid border-[#fff]" type="submit">submit</button>
                 </form>
             </div>  
         </div>
