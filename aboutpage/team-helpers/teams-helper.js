@@ -126,11 +126,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //Eventhandler's functionalities for addteamModal form
     //Reading input file from user's desktop
-    const formImage = document.getElementById('image-input');
+    const imageInput = document.getElementById('image-input');
     imageInput.addEventListener('change',()=>{
-        let imageFile = imageInput.files[0];
+        let imageFile = formImage.files[0];
         const reader = new FileReader();
-        const userImage = document.getElementById('user-image')
+        // const userImage = document.getElementById('user-image')
         
         reader.addEventListener('load',()=>{
             userImage.src = reader.result;
@@ -142,88 +142,140 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
     
     //Form validation for addTeamModal
-    const saveBtn = document.getElementById('save-btn');
-    const userImage = document.getElementById('user-image')
-    const fullName = document.getElementById('full-name');
-    const role = document.getElementById('role');
-    const experience = document.getElementById('experience');
-    const twitterLink = document.getElementById('twitter-link');
-    const linkedinLink = document.getElementById('linkedin-link');
-    const teamsForm = document.getElementById('teams-form');
-
-    const resetStyles = () => {
-        for (let i = 0; i < teamsForm.children.length; i++) {
-          teamsForm.children[i].style.borderBottomColor = '';
-        }
-        twitterLink.style.borderBottomColor = '';
-        linkedinLink.style.borderBottomColor = '';
-        userImage.style.border='2px solid #79c8c7'
-        saveBtn.style.border = '';
-        saveBtn.style.backgroundColor = '';
-        saveBtn.style.color = '';
-      };
-
-    const errorResponse =()=>{
-        for(let i = 0; i < teamsForm.children.length; i++){
-            teamsForm.children[i].style.borderBottomColor = '#f67e7e';
-        }
-
-       twitterLink.style.borderBottomColor = '#F67E7E';
-       linkedinLink.style.borderBottomColor = '#F67E7E';
-       userImage.classList.add('border-2','border-light-coral')
+     //Form validation for addTeamModal
+     //Note to self: Form Validation works fine but the saveBtn can't reassigned input val
+     const saveBtn = document.getElementById('save-btn');
+     const userImage = document.getElementById('user-image')
+     const fullName = document.getElementById('full-name');
+     const role = document.getElementById('role');
+     const experience = document.getElementById('experience');
+     const twitterLink = document.getElementById('twitter-link');
+     const linkedinLink = document.getElementById('linkedin-link');
+     const teamsForm = document.getElementById('teams-form');
+ 
+     const resetStyles = () => {
+         for (let i = 0; i < teamsForm.children.length; i++) {
+           teamsForm.children[i].style.borderBottomColor = '';
+         }
+         twitterLink.style.borderBottomColor = '';
+         linkedinLink.style.borderBottomColor = '';
+         userImage.style.border='2px solid #79c8c7'
+         saveBtn.style.border = '';
+         saveBtn.style.backgroundColor = '';
+         saveBtn.style.color = '';
+       };
+ 
+     const errorResponse =()=>{
+         for(let i = 0; i < teamsForm.children.length; i++){
+             teamsForm.children[i].style.borderBottomColor = '#f67e7e';
+         }
+ 
+        twitterLink.style.borderBottomColor = '#F67E7E';
+        linkedinLink.style.borderBottomColor = '#F67E7E';
+        userImage.classList.add('border-2','border-light-coral')
+        
+        saveBtn.style.border = '1px solid #f67e7e';
+        saveBtn.style.backgroundColor = 'rgba( 0, 0, 0, 0.05)';
+        saveBtn.style.color = '#f67e7e';
+     }
        
-       saveBtn.style.border = '1px solid #f67e7e';
-       saveBtn.style.backgroundColor = 'rgba( 0, 0, 0, 0.05)';
-       saveBtn.style.color = '#f67e7e';
-    }
-      
-    
-    const addteamModalValidation = ()=>{
-         let imageInput = userImage.src;
-         let fullNameInput = fullName.value;
-         let roleInput = role.value;
-         let xpInput = experience.value;
-         let twitterInput = twitterLink.value;
-         let linkedinInput = linkedinLink.value;
-         const teamsForm = document.getElementById('teams-form');
+     
+     const addteamModalValidation = ()=>{
+          let imageInput = userImage.src;
+          let fullNameInput = fullName.value;
+          let roleInput = role.value;
+          let xpInput = experience.value;
+          let twitterInput = twitterLink.value;
+          let linkedinInput = linkedinLink.value;
+          const teamsForm = document.getElementById('teams-form');
+ 
+          if( imageInput === '' || fullNameInput === '' || roleInput === ''){
+             // saveBtn.onclick = null;
+             saveBtn.disabled = true;
+             errorResponse();
+         } else{
+             resetStyles();
+             saveBtn.disabled = 'false';
+         }
+     }
+ 
+     saveBtn.addEventListener( 'click', ()=>{
+         addteamModalValidation();
+         console.log(saveBtn.disabled);
+         if(!saveBtn.disabled){
+             let currentIndex = 0;
+             let imageInput = userImage.src;
+             let fullNameInput = fullName.value;
+             let roleInput = role.value;
+             let xpInput = experience.value;
+             let twitterInput = twitterLink.value;
+             let linkedinInput = linkedinLink.value;
+             document.querySelector('.profile-image')[currentIndex].setAttribute('src', imageInput);
+             document.querySelector('.profile-name')[currentIndex].textContent(fullNameInput);
+             document.querySelector('.profile-role')[currentIndex].textContent(roleInput);
+             document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,twitterInput);
+             document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,linkedinInput);
+ 
+             currentIndex++;
+             addteamModal.style.display = 'none';
+         }
+     })
+ 
+     fullName.addEventListener('input', resetStyles);
+     role.addEventListener('input', resetStyles);
+     // // experience.addEventListener('input', addteamModalValidation)
+     twitterLink.addEventListener('input', resetStyles);
+     linkedinLink.addEventListener('input', resetStyles); 
 
-         if( imageInput === '' || fullNameInput === '' || roleInput === ''){
-            // saveBtn.onclick = null;
-            saveBtn.disabled = true;
-            errorResponse();
-        } else{
-            resetStyles();
-            saveBtn.disabled = false;
-        }
-    }
 
-    saveBtn.addEventListener( 'click', ()=>{
-        addteamModalValidation();
-        // console.log(saveBtn.disabled);
-        if(!saveBtn.disabled){
-            let currentIndex = 0;
-            let imageInput = userImage.src;
-            let fullNameInput = fullName.value;
-            let roleInput = role.value;
-            let xpInput = experience.value;
-            let twitterInput = twitterLink.value;
-            let linkedinInput = linkedinLink.value;
-            document.querySelector('.profile-image')[currentIndex].setAttribute('src', imageInput);
-            document.querySelector('.profile-name')[currentIndex].textContent(fullNameInput);
-            document.querySelector('.profile-role')[currentIndex].textContent(roleInput);
-            document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,twitterInput);
-            document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,linkedinInput);
 
-            currentIndex++;
-            addteamModal.style.display = 'none';
-        }
+     ///////////////////////////////////////////////////
+    //Update profile Form/Profile preview event handlers
+    const updateBtns = document.querySelectorAll('.update-btn')
+
+    updateBtns.forEach(updateBtn =>{
+        updateBtn.addEventListener('click',(event)=>{
+            document.getElementById('update-modal').style.display = 'block';
+            const updateBtnClick = event.currentTarget;
+            
+            const updateImage = updateBtnClick.previousElementSibling
+                .closest('.profile')
+                .querySelector('.profile-image')
+                .getAttribute('src');
+
+            const updateName = updateBtnClick.previousElementSibling
+                .closest('.profile')
+                .querySelector('.profile-name')
+                .textContent;
+
+            const updateRole = updateBtnClick.previousElementSibling
+                .closest('.profile')
+                .querySelector('.profile-role')
+                .textContent;
+
+            const updateTwitter = updateBtnClick.previousElementSibling
+                .closest('.profile')
+                .querySelector('.twitter-link')
+                .getAttribute('href');
+            const updateLinkedIn = updateBtnClick.previousElementSibling
+                .closest('.profile')
+                .querySelector('.linkedIn-link')
+                .getAttribute('href');
+            
+            document.getElementById('update-image').setAttribute('src', updateImage);
+            document.getElementById('user-name').value = updateName;
+            document.getElementById('user-name').readOnly = true;
+            
+            document.getElementById('role-name').value = updateRole;
+            document.getElementById('role-name').readOnly = true;
+            
+        })
     })
+    
+    document.getElementById('exit').addEventListener('click',()=>{
+        document.getElementById('update-modal').style.display = 'none';
+     })
 
-    fullName.addEventListener('input', resetStyles);
-    role.addEventListener('input', resetStyles);
-    // // experience.addEventListener('input', addteamModalValidation)
-    twitterLink.addEventListener('input', resetStyles);
-    linkedinLink.addEventListener('input', resetStyles);
 });
 
 
