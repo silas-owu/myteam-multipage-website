@@ -7,6 +7,11 @@
   /* src: url('./public/Fonts/Livvic-Bold.ttf'); */
 /* } */
 
-.my-class {
-  @apply laptop:w-[69.375rem] laptop:h-[38rem];
+/* .my-class { */
+  /* @apply laptop:w-[69.375rem] laptop:h-[38rem]; */
+/* } */
+
+.autofill:-webkit-autofill {
+  /* your custom styles */
+  background-color: #014E56;
 }

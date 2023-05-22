@@ -1,20 +1,17 @@
 //Using Jquery for homepage modal
 //Using jQuery for DOM manipulations
 
-$(function() {
-    const $menuBtn = $('#menu-btn');
-    const $homepageModal = $('#homepage-modal');
-    const  $closeBtn = $('#close-btn');
-
-    $menuBtn.on('click',()=>{
-        $homepageModal.css('visibility', 'visible');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('#menu-btn');
+    const homepageModal = document.querySelector('#homepage-modal');
+    const closeBtn = document.querySelector('#close-btn');
+  
+    menuBtn.addEventListener('click', function() {
+      homepageModal.style.visibility = 'visible';
     });
-
-    $closeBtn.on('click',()=>{
-        $homepageModal.css('visibility','hidden')
+  
+    closeBtn.addEventListener('click', function() {
+      homepageModal.style.visibility = 'hidden';
     });
+})
 
-    // $homepageModal.on('click',(event)=>{
-    //     $(event.currentTarget).css('visibility','hidden')
-    // });
-});

@@ -1,5 +1,61 @@
-
 document.addEventListener('DOMContentLoaded', ()=>{
+    console.log(window.innerWidth)
+     //Prevent eventlisteners from working
+     //on tablet and mobile screens
+      //Update profile Form/Profile preview event handlers
+    const updateBtns = document.querySelectorAll('.update-btn')
+    const updateBtnClickHandler=(event)=>{
+        document.getElementById('update-modal').style.display = 'block';
+        const updateBtnClick = event.currentTarget;
+        
+        const updateImage = updateBtnClick.previousElementSibling
+            .closest('.profile')
+            .querySelector('.profile-image')
+            .getAttribute('src');
+
+        const updateName = updateBtnClick.previousElementSibling
+            .closest('.profile')
+            .querySelector('.profile-name')
+            .textContent;
+
+        const updateRole = updateBtnClick.previousElementSibling
+            .closest('.profile')
+            .querySelector('.profile-role')
+            .textContent;
+
+        const updateTwitter = updateBtnClick.previousElementSibling
+            .closest('.profile')
+            .querySelector('.twitter-link')
+            .getAttribute('href');
+        const updateLinkedIn = updateBtnClick.previousElementSibling
+            .closest('.profile')
+            .querySelector('.linkedIn-link')
+            .getAttribute('href');
+        
+        document.getElementById('update-image').setAttribute('src', updateImage);
+        document.getElementById('user-name').value = updateName;
+        document.getElementById('user-name').readOnly = true;
+        
+        document.getElementById('role-name').value = updateRole;
+        document.getElementById('role-name').readOnly = true;
+        
+    }
+
+    if( window.innerWidth <= 769){
+        updateBtns.forEach(updateBtn =>{
+            updateBtn.disabled = true;
+            updateBtn.removeEventListener('click', updateBtnClickHandler);
+        })
+    }else{
+        updateBtns.forEach(updateBtn =>{
+            updateBtn.disabled = false;
+            updateBtn.addEventListener('click', updateBtnClickHandler);
+        })
+    }
+
+
+
+
     
     ///EventHandlers for AddteamModal and its functionality
     //edit eventlistener to show addteamModal
@@ -20,7 +76,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Reading input file from user's desktop
     const imageInput = document.getElementById('image-input');
     imageInput.addEventListener('change',()=>{
-        let imageFile = formImage.files[0];
+        let imageFile = imageInput.files[0];
         const reader = new FileReader();
         // const userImage = document.getElementById('user-image')
         
@@ -64,8 +120,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
  
         twitterLink.style.borderBottomColor = '#F67E7E';
         linkedinLink.style.borderBottomColor = '#F67E7E';
-        userImage.classList.add('border-2','border-light-coral')
-        
+        // console.log(userImage)
+        userImage.style.border ='2px solid #F67E7E';        
         saveBtn.style.border = '1px solid #f67e7e';
         saveBtn.style.backgroundColor = 'rgba( 0, 0, 0, 0.05)';
         saveBtn.style.color = '#f67e7e';
@@ -87,16 +143,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
              errorResponse();
          } else{
              resetStyles();
-             saveBtn.disabled = 'false';
          }
      }
  
      saveBtn.addEventListener( 'click', ()=>{
          addteamModalValidation();
+         saveBtn.disabled = false;
          console.log(saveBtn.disabled);
-         if(!saveBtn.disabled){
-             let currentIndex = 0;
-             let imageInput = userImage.src;
+         let currentIndex = 0;
+         let imageInput = userImage.src;
+         console.log(userImage.src);
              let fullNameInput = fullName.value;
              let roleInput = role.value;
              let xpInput = experience.value;
@@ -110,7 +166,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
  
              currentIndex++;
              addteamModal.style.display = 'none';
-         }
      })
  
      fullName.addEventListener('input', resetStyles);
@@ -119,55 +174,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
      twitterLink.addEventListener('input', resetStyles);
      linkedinLink.addEventListener('input', resetStyles); 
 
-
-
      ///////////////////////////////////////////////////
-    //Update profile Form/Profile preview event handlers
-    const updateBtns = document.querySelectorAll('.update-btn')
-
-    updateBtns.forEach(updateBtn =>{
-        updateBtn.addEventListener('click',(event)=>{
-            document.getElementById('update-modal').style.display = 'block';
-            const updateBtnClick = event.currentTarget;
-            
-            const updateImage = updateBtnClick.previousElementSibling
-                .closest('.profile')
-                .querySelector('.profile-image')
-                .getAttribute('src');
-
-            const updateName = updateBtnClick.previousElementSibling
-                .closest('.profile')
-                .querySelector('.profile-name')
-                .textContent;
-
-            const updateRole = updateBtnClick.previousElementSibling
-                .closest('.profile')
-                .querySelector('.profile-role')
-                .textContent;
-
-            const updateTwitter = updateBtnClick.previousElementSibling
-                .closest('.profile')
-                .querySelector('.twitter-link')
-                .getAttribute('href');
-            const updateLinkedIn = updateBtnClick.previousElementSibling
-                .closest('.profile')
-                .querySelector('.linkedIn-link')
-                .getAttribute('href');
-            
-            document.getElementById('update-image').setAttribute('src', updateImage);
-            document.getElementById('user-name').value = updateName;
-            document.getElementById('user-name').readOnly = true;
-            
-            document.getElementById('role-name').value = updateRole;
-            document.getElementById('role-name').readOnly = true;
-            
-        })
-    })
-    
     document.getElementById('exit').addEventListener('click',()=>{
         document.getElementById('update-modal').style.display = 'none';
      })
-
 });
 
 

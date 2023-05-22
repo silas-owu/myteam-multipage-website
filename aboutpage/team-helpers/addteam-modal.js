@@ -19,7 +19,7 @@
                         </div>
                         <div class="h-[22.5rem]  mx-auto">
                             <div id="teams-form" class="font-libre font-bold flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:w-[25rem] children:border-b children:border-[#fff] hover:border-rapture-blue">
-                                <input  class="p-3 focus:outline-none hover:border-rapture-blue" type="text" id="full-name" name="Fullname" required placeholder="Full name:"/>
+                                <input  class="p-3 focus:outline-none hover:border-rapture-blue autofill" type="text" id="full-name" name="Fullname" required placeholder="Full name:"/>
                                 <input  class="p-3 focus:outline-none hover:border-rapture-blue" type="text" id="role" name="Fullname" required placeholder="Role:"/>
                                 <input  class="p-3 focus:outline-none hover:border-rapture-blue" type="text" id="experience" name="experiences" placeholder="Experiences:"/>
                                 <div id="socialmedia-section"  class=" flex  flex-col gap-y-4 children:h-[2.9rem]  children:focus-outline-none">

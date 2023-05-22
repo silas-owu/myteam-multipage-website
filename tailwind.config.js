@@ -31,7 +31,7 @@ export default {
       'onahau':'#C4FFFE'
     },
     extend: {
-      placeholderColor: theme => ({
+        placeholderColor: theme => ({
         'red': '#ff0000',
       }),
     },
@@ -163,4 +163,3 @@ export default {
     })
   ]
 }
-// flex flex-row mobile:mt-[1rem] tablet:items-center mobile:justify-between
