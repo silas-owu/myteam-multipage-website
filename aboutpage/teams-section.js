@@ -4,7 +4,7 @@ document.querySelector('#teams-section').innerHTML=`
         <div class=" laptop:relative laptop:left-[-8rem] tablet:-ml-[6.5rem] tablet:mr-auto mobile:-mt-[6.8rem] mobile:-ml-[6.5rem] ">
             <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
         </div>
-        <div id="edit-btn"  class=" tablet:hidden mobile:hidden w-[1.5rem]   relative ml-[84rem] mt-2">
+        <div id="edit-btn"  class=" tablet:hidden mobile:hidden w-[1.5rem]   relative ml-[84rem] mt-2 hover:cursor-pointer">
             <svg  class="hover:stroke-light-coral stroke-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
             </svg>
@@ -12,7 +12,7 @@ document.querySelector('#teams-section').innerHTML=`
         <div id="teams-container"  class=" laptop:mx-[10.3125rem] laptop:mt-[-4.6rem] tablet:mx-[6.125rem] laptop:flex laptop:flex-col laptop:gap-y-12 tablet:flex tablet:flex-col tablet:gap-y-10 tablet:mt-[-6rem] tablet:w-[35.8125rem] tablet:h-[68.6875rem] mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-4 ">
             <h2  id="teams-header"  class="font-livvic text-[#fff] text-[2rem] font-bold text-center mt-[-0.5rem]">Meet the Team</h2>
             <div id="teams-profile"  class="laptop:gap-8 laptop:w-[69.375rem] laptop:h-[38rem] laptop:grid laptop:grid-cols-3 tablet:grid tablet:grid-cols-2 tablet:h-[58.6875rem] tablet:gap-x-4 tablet:gap-y-2 mobile:flex mobile:flex-col mobile:gap-y-[1.68rem] chldren:w-[20.4375rem] children:h-[17.5625rem] ">
-                <div>
+                <div class='front'>
                     <div class=" bg-sacramento font-livvic h-[15.8125rem] flex flex-col mx-auto mobile:teamscontainer profile">
                         <img class="avatar profile-image" src='../assets/avatar-nikita.jpg'/>
                         <div class="text-center  mobile:mt-4">
@@ -34,8 +34,7 @@ document.querySelector('#teams-section').innerHTML=`
                         </svg>
                     </div>
                 </div>
-
-                <div>
+                <div class="front">
                     <div class="bg-sacramento h-[15.8125rem] flex flex-col font-livvic mobile:teamscontainer profile">
                         <img class="avatar profile-image" src='../assets/avatar-christian.jpg'/>
                         <div class="text-center  mobile:mt-4">
@@ -58,7 +57,7 @@ document.querySelector('#teams-section').innerHTML=`
                     </div>
                 </div>
 
-                <div>
+                <div class="back">
                     <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
                         <img class="avatar profile-image" src='../assets/avatar-cruz.jpg'/>
                         <div class="text-center  mobile:mt-4">
@@ -184,7 +183,7 @@ document.querySelector('#teams-section').innerHTML=`
                         </svg>
                     </div>
                 </div>
-
+                
                 <div class="tablet:hidden laptop:flex laptop:flex-col">
                     <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] laptop:gap-y-4 mobile:teamscontainer ">
                         <div class="text-center  mobile:mt-8 laptop:flex laptop:flex-col laptop:gap-y-3 laptop:mt-6">

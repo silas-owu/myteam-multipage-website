@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    console.log(window.innerWidth)
-     //Prevent eventlisteners from working
+    // console.log(window.innerWidth)
+         //Prevent eventlisteners from working
      //on tablet and mobile screens
       //Update profile Form/Profile preview event handlers
     const updateBtns = document.querySelectorAll('.update-btn')
@@ -23,10 +23,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
             .querySelector('.profile-role')
             .textContent;
 
+        // const updateXp = updateBtnClick.previousElementSibling
+        //     .closest('.profile')
+        //     .querySelector('.experience-input')
+        //     .textContent;
+
         const updateTwitter = updateBtnClick.previousElementSibling
             .closest('.profile')
             .querySelector('.twitter-link')
             .getAttribute('href');
+
         const updateLinkedIn = updateBtnClick.previousElementSibling
             .closest('.profile')
             .querySelector('.linkedIn-link')
@@ -39,14 +45,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
         document.getElementById('role-name').value = updateRole;
         document.getElementById('role-name').readOnly = true;
         
+        document.getElementById('update-tw-link').setAttribute('href', updateTwitter);
+        document.getElementById('update-lin-link').setAttribute('href', updateLinkedIn);
+        console.log(document.getElementById('update-lin-link'));
     }
 
-    if( window.innerWidth <= 769){
+     if( window.innerWidth <= 769){
         updateBtns.forEach(updateBtn =>{
             updateBtn.disabled = true;
             updateBtn.removeEventListener('click', updateBtnClickHandler);
-        })
-    }else{
+         })
+     }else{
         updateBtns.forEach(updateBtn =>{
             updateBtn.disabled = false;
             updateBtn.addEventListener('click', updateBtnClickHandler);
@@ -120,64 +129,80 @@ document.addEventListener('DOMContentLoaded', ()=>{
  
         twitterLink.style.borderBottomColor = '#F67E7E';
         linkedinLink.style.borderBottomColor = '#F67E7E';
-        // console.log(userImage)
         userImage.style.border ='2px solid #F67E7E';        
         saveBtn.style.border = '1px solid #f67e7e';
         saveBtn.style.backgroundColor = 'rgba( 0, 0, 0, 0.05)';
         saveBtn.style.color = '#f67e7e';
      }
        
-     
-     const addteamModalValidation = ()=>{
-          let imageInput = userImage.src;
-          let fullNameInput = fullName.value;
-          let roleInput = role.value;
-          let xpInput = experience.value;
-          let twitterInput = twitterLink.value;
-          let linkedinInput = linkedinLink.value;
-          const teamsForm = document.getElementById('teams-form');
  
-          if( imageInput === '' || fullNameInput === '' || roleInput === ''){
-             // saveBtn.onclick = null;
-             saveBtn.disabled = true;
-             errorResponse();
-         } else{
-             resetStyles();
-         }
-     }
- 
+     let currentIndex = 0;
      saveBtn.addEventListener( 'click', ()=>{
-         addteamModalValidation();
-         saveBtn.disabled = false;
-         console.log(saveBtn.disabled);
-         let currentIndex = 0;
-         let imageInput = userImage.src;
-         console.log(userImage.src);
-             let fullNameInput = fullName.value;
-             let roleInput = role.value;
-             let xpInput = experience.value;
-             let twitterInput = twitterLink.value;
-             let linkedinInput = linkedinLink.value;
-             document.querySelector('.profile-image')[currentIndex].setAttribute('src', imageInput);
-             document.querySelector('.profile-name')[currentIndex].textContent(fullNameInput);
-             document.querySelector('.profile-role')[currentIndex].textContent(roleInput);
-             document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,twitterInput);
-             document.querySelector('.twitter-link')[currentIndex].setAttribute('href' ,linkedinInput);
- 
-             currentIndex++;
-             addteamModal.style.display = 'none';
+        //  addteamModalValidation();
+        //  saveBtn.disabled = false;
+        //  console.log(saveBtn.disabled);
+        let imageInput = userImage.src;
+        let fullNameInput = fullName.value;
+        let roleInput = role.value;
+        let xpInput = experience.value;
+        let twitterInput = twitterLink.value;
+        let linkedinInput = linkedinLink.value;
+
+        if( imageInput === '' || fullNameInput === '' || roleInput === ''){
+            errorResponse();
+            saveBtn.disabled = true;
+        } else{
+            saveBtn.disabled = false;
+            // console.log(saveBtn.disabled);
+            resetStyles();
+            document.querySelectorAll('.profile-image')[currentIndex].setAttribute('src', imageInput);
+            document.querySelectorAll('.profile-name')[currentIndex].textContent = fullNameInput;
+            document.querySelectorAll('.profile-role')[currentIndex].textContent = roleInput;
+            document.getElementByAll('experience-input').textContent = xpInput
+            document.querySelectorAll('.twitter-link')[currentIndex].setAttribute('href' ,twitterInput);
+            document.querySelectorAll('.twitter-link')[currentIndex].setAttribute('href' ,linkedinInput);
+            currentIndex++;
+            addteamModal.style.display = 'none';
+
+            // Clear the input fields
+            userImage.src = '';
+            fullName.value = '';
+            role.value = '';
+            experience.value = '';
+            twitterLink.value = '';
+            linkedinLink.value = ''; 
+        }
      })
  
      fullName.addEventListener('input', resetStyles);
      role.addEventListener('input', resetStyles);
      // // experience.addEventListener('input', addteamModalValidation)
      twitterLink.addEventListener('input', resetStyles);
-     linkedinLink.addEventListener('input', resetStyles); 
+     linkedinLink.addEventListener('input',resetStyles); 
+     
+     let twitterInput = twitterLink.value;
+     let linkedinInput = linkedinLink.value;
+     const urlRegex = /^(http|https):\/\/[^ "]+$/;
+     twitterLink.addEventListener('input', function() {     
+         twitterInput.trim();   
+        if (!urlRegex.test(twitterInput)){
+          alert('Invalid LinkedIn URL');
+          return;
+        }
+      });
+      
+     linkedinLink.addEventListener('input', function() {
+        linkedinInput.trim();        
+        if (!urlRegex.test(linkedinInput)) {
+          alert('Invalid LinkedIn URL');
+          return;
+        }
+      });
 
      ///////////////////////////////////////////////////
     document.getElementById('exit').addEventListener('click',()=>{
         document.getElementById('update-modal').style.display = 'none';
-     })
+    })
 });
 
 

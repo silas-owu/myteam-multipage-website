@@ -126,7 +126,6 @@ export default {
           paddingLeft: '1.7rem',
           paddingRight: '1.7rem',
           width:'20.4375rem',
-          // height:'18.875rem',
           display: 'flex',
           flexDirection:'column',
           rowGap: '1.2rem'
@@ -159,7 +158,6 @@ export default {
         }
 
       },['mobile','tablet'])
-
     })
   ]
 }
