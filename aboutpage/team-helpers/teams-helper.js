@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    // console.log(window.innerWidth)
          //Prevent eventlisteners from working
      //on tablet and mobile screens
       //Update profile Form/Profile preview event handlers
