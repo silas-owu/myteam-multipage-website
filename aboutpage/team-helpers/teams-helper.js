@@ -22,11 +22,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             .querySelector('.profile-role')
             .textContent;
 
-        // const updateXp = updateBtnClick.previousElementSibling
-        //     .closest('.profile')
-        //     .querySelector('.experience-input')
-        //     .textContent;
-
         const updateTwitter = updateBtnClick.previousElementSibling
             .closest('.profile')
             .querySelector('.twitter-link')
@@ -137,9 +132,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
  
      let currentIndex = 0;
      saveBtn.addEventListener( 'click', ()=>{
-        //  addteamModalValidation();
-        //  saveBtn.disabled = false;
-        //  console.log(saveBtn.disabled);
         let imageInput = userImage.src;
         let fullNameInput = fullName.value;
         let roleInput = role.value;
@@ -151,6 +143,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
             errorResponse();
             saveBtn.disabled = true;
         } else{
+              // Add the validation for Twitter URL
+            const twitterRegex = /^https?:\/\/(?:www\.)?twitter\.com\/(?:#!\/)?(\w+)\/status(es)?\/(\d+)$/;
+            if (!twitterRegex.test(twitterInput)) {
+                errorResponse();
+                twitterLink.style.borderBottomColor = '#F67E7E';
+                saveBtn.disabled = true;
+                return;
+            }
+
+            // Add the validation for LinkedIn URL
+            const linkedinRegex = /^https?:\/\/(?:www\.)?linkedin\.com\/(?:in|company)\/[\w-]+[\/]?$/;
+            if (!linkedinRegex.test(linkedinInput)) {
+                errorResponse();
+                linkedinLink.style.borderBottomColor = '#F67E7E';
+                saveBtn.disabled = true;
+                return;
+            }   
+
             saveBtn.disabled = false;
             // console.log(saveBtn.disabled);
             resetStyles();
@@ -179,24 +189,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
      twitterLink.addEventListener('input', resetStyles);
      linkedinLink.addEventListener('input',resetStyles); 
      
-     let twitterInput = twitterLink.value;
+     /* let twitterInput = twitterLink.value;
      let linkedinInput = linkedinLink.value;
-     const urlRegex = /^(http|https):\/\/[^ "]+$/;
-     twitterLink.addEventListener('input', function() {     
-         twitterInput.trim();   
-        if (!urlRegex.test(twitterInput)){
+     const twitterRegex = /^https?:\/\/(?:www\.)?twitter\.com\/(?:#!\/)?(\w+)\/status(es)?\/(\d+)$/;
+     const linkedinRegex =/^https?:\/\/(?:www\.)?linkedin\.com\/(?:in|company)\/[\w-]+[\/]?$/;
+
+     twitterLink.addEventListener('change', function() {        
+        if (!twitterRegex.test(twitterInput)){
           alert('Invalid LinkedIn URL');
           return;
         }
       });
       
-     linkedinLink.addEventListener('input', function() {
-        linkedinInput.trim();        
-        if (!urlRegex.test(linkedinInput)) {
+     linkedinLink.addEventListener('change', function() { 
+        if (!linkedinRegex.test(linkedinInput)) {
           alert('Invalid LinkedIn URL');
           return;
         }
-      });
+      }); */
 
      ///////////////////////////////////////////////////
     document.getElementById('exit').addEventListener('click',()=>{
