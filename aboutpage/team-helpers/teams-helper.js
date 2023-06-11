@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    // console.log(window.innerWidth)
-         //Prevent eventlisteners from working
-     //on tablet and mobile screens
-      //Update profile Form/Profile preview event handlers
+  
     const updateBtns = document.querySelectorAll('.update-btn')
     const updateBtnClickHandler=(event)=>{
         document.getElementById('update-modal').style.display = 'block';
@@ -23,10 +20,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             .querySelector('.profile-role')
             .textContent;
 
-        // const updateXp = updateBtnClick.previousElementSibling
-        //     .closest('.profile')
-        //     .querySelector('.experience-input')
-        //     .textContent;
 
         const updateTwitter = updateBtnClick.previousElementSibling
             .closest('.profile')
@@ -47,7 +40,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
         document.getElementById('update-tw-link').setAttribute('href', updateTwitter);
         document.getElementById('update-lin-link').setAttribute('href', updateLinkedIn);
-        console.log(document.getElementById('update-lin-link'));
+
     }
 
      if( window.innerWidth <= 769){
@@ -149,7 +142,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             errorResponse();
             saveBtn.disabled = true;
         } else{
-            console.log(saveBtn.disabled);
+            // console.log(saveBtn.disabled);
             saveBtn.disabled = false;
             resetStyles();
             document.querySelectorAll('.profile-image')[currentIndex].setAttribute('src', imageInput);
