@@ -8,23 +8,425 @@
     <title>MyTeam Multipage Website</title>
   </head>
   <body class="w-full min-h-screen  laptop:grid laptop:grid-rows-[32.3125rem_62.625rem_27.3125rem_12.5rem_12.25rem] tablet:grid tablet:grid-rows-[34.75rem_76.5rem_19.25rem_12.5rem_16.9375rem]  mobile:grid mobile:grid-rows-[32.5rem_128.875rem_39.5rem_18.875rem_27rem]" >
-    <div class="laptop:hidden tablet:hidden mobile:invisible mobile:w-full mobile:fixed mobile:inset-0 mobile:min-h-screen  mobile:z-[999]" id="homepage-modal"></div>
-    <div class="laptop:inset-0 laptop:min-h-screen laptop:z-[999] hidden  laptop:fixed mobile:hidden tablet:hidden" id="update-modal"></div>
-    <div class="laptop:inset-0 laptop:min-h-screen hidden laptop:z-[999]  laptop:fixed tablet:hidden mobile:hidden" id="addteam-modal"></div>
-    <div class="flex flex-row bg-midnight-green" id="about-page"></div>
-    <div class="flex flex-row bg-deep-jungle-green" id="teams-section"></div>
-    <div class="flex flex-row bg-sacramento mobile:overflow-hidden " id="clients-section"></div>
-    <div class="flex flex-row mobile:justify-center mobile:items-center bg-light-coral" id="contact-section"></div>
-    <div class="flex flex-row laptop:px-[10.3125rem] laptop:py-12 bg-dark-green mobile:py-[4.125rem] mobile:px-[1.5rem]" id="footer"></div>
-    <script type="module" src="./homepage/homepage-modal.js"></script>
-    <script type="module" src="./homepage/modal-helper.js"></script>
-    <script src="./aboutpage/team-helpers/teams-helper.js"></script>
-    <script type="module" src="./aboutpage/team-helpers/addteam-modal.js"></script>
-    <script type="module" src="./aboutpage/team-helpers/update-modal.js"></script>
-    <script type="module" src="./aboutpage/about-homepage.js"></script>
-    <script type="module" src="./aboutpage/teams-section.js"></script>
-    <script type="module" src="./aboutpage/clients-section.js"></script>
-    <script type="module" src="./aboutpage/contact-section.js"></script>
-    <script type="module" src="./aboutpage/footer.js"></script>
+    <div class="laptop:hidden tablet:hidden mobile:invisible mobile:w-full mobile:fixed mobile:inset-0 mobile:min-h-screen  mobile:z-[999]" id="homepage-modal">
+      <div class="mobile:fixed mobile:w-full mobile:h-full mobile:bg-[#000]/60">
+        <div class="mobile:px-12 mobile:fixed mobile:inset-0 mobile:w-[15.9375rem] mobile:bg-police-blue mobile:ml-auto mobile:flex mobile:flex-col mobile:gap-[15rem]" >
+          <div class="mobile:gap-y-[2.375rem] mobile:w-[11.3rem] mobile: mobile:flex mobile:flex-col   mobile:mt-[3.523125rem]  mobile:h-[17rem]">
+              <div id="close-btn" class="mobile:w-[1.01625rem] mobile:h-[1.01625rem] mobile:ml-auto ">
+                  <img src='../assets/icon-close.svg'/>
+              </div>
+              <div class="mobile:flex mobile:flex-col mobile:gap-y-8">
+                  <a href="./index.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold  text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3></a>
+                  <a href="./aboutpage.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
+              </div>
+              <a href="./contact.html"><button class="cursor-pointer mt-[2.25rem] hover:bg-[#fff] hover:text-dark-green  border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff]">contact us</button></a>
+          </div>
+          <div class="mobile:mt-[-10.5rem]  mobile:mr-[-10rem] mobile:w-[12.5rem] mobile:h-[12.5rem] mobile:self-end ">
+              <img src='../assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="laptop:inset-0 laptop:min-h-screen laptop:z-[999] hidden  laptop:fixed mobile:hidden tablet:hidden" id="update-modal">
+      <div class="bg-dark-green bg-opacity-80 h-full pt-[4rem]">
+        <div id="exit" class="w-[1.5rem] relative ml-[84rem] mt-8">
+          <svg class="stroke-[#fff] hover:stroke-light-coral"  xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <div class="w-[55rem] h-[39rem] mx-auto grid grid-cols-2">
+          <div class="w-[30rem]">
+            <img class="w-[30rem] h-[39rem]" id="update-image" />
+          </div>
+          <div class=" laptop:flex laptop:flex-col laptop:gap-y-[6.5rem] px-4 pt-[10rem] bg-midnight-green">
+            <div class="laptop:flex laptop:flex-col laptop:h-[25rem]  children:bg-midnight-green  laptop:gap-y-1">
+              <input class="pl-1 font-livvic font-bold focus:outline-none h-[3rem] text-[3rem]  text-onahau" placeholder="" type="text" id="user-name"/>
+              <input class="p-1 focus:outline-none h-[2rem] text-[2rem] text-rapture-blue font-livvic font-semibold" type="text" placeholder="" id="role-name"/>
+              <p class="p-2 text-rapture-blue focus:outline-none   h-[8.5rem] text-[1.3rem] leading-1  font-livvic font-semibold" id="experience-input" >
+                3 years in Content strategy and appreciate what developers do
+              </p> 
+              <div class="flex flex-row gap-4 mx-4 -mt-4 bg-none">
+                <a target="_blank" href=" " class="update-tw-link hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                        <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                    </svg>
+                </a>
+                <a target="_blank" href=" "  class="update-lin-link hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                    </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="laptop:inset-0 laptop:min-h-screen hidden laptop:z-[999]  laptop:fixed tablet:hidden mobile:hidden" id="addteam-modal">
+      <div  class="w-full h-full bg-dark-green bg-opacity-60 text-[#fff] pt-[3rem] ">
+        <div id="close" class="w-[1.5rem] relative ml-[84rem] mt-8">
+          <svg class="stroke-[#fff] hover:stroke-light-coral"  xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <div class="grid grid-cols-2 mx-auto   bg-midnight-green w-[66rem] h-[40rem] ">
+            <div class="px-6 py-10">
+              <div class="h-[35rem] flex flex-col gap-y-12">
+                <div  class="mx-auto ">
+                  <img id="user-image"   class="border-2 border-rapture-blue rounded-full w-[9.6rem] h-[9.6rem]" />
+                  <input id="image-input" type="file" style="appearance: none; display: none;" class="border-2">
+                  <label for="image-input">
+                    <svg id="addimage-btn"  class=" -mt-4 ml-[8.9rem] w-8 h-8 hover:stroke-rapture-blue stroke-police-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                    </svg>
+                  </label>
+                </div>
+                <div class="h-[22.5rem]  mx-auto">
+                  <div id="teams-form" class="font-libre font-bold flex flex-col gap-y-4 children:h-[2.9rem] children:bg-midnight-green children:w-[25rem] children:border-b children:border-[#fff] hover:border-rapture-blue">
+                    <input  class="p-3 focus:outline-none hover:border-rapture-blue autofill" type="text" id="full-name" name="Fullname" required placeholder="Full name:"/>
+                    <input  class="p-3 focus:outline-none hover:border-rapture-blue" type="text" id="role" name="Fullname" required placeholder="Role:"/>
+                    <input  class="p-3 focus:outline-none hover:border-rapture-blue" type="text" id="experience" name="experiences" placeholder="Experiences:"/>
+                    <div id="socialmedia-section"  class=" flex  flex-col gap-y-4 children:h-[2.9rem]  children:focus-outline-none">
+                      <input  class="p-3 focus:outline-none bg-midnight-green border-b border-[#fff] hover:border-rapture-blue" type="text" id="twitter-link" name="twitter link" required  placeholder="Twitter link:"/>
+                      <input  class="p-3 focus:outline-none bg-midnight-green border-b border-[#fff] hover:border-rapture-blue" type="text" id="linkedin-link" name="linkedin link" required placeholder="LinkedIn link:"/>
+                      <button id="save-btn"  class="mx-auto bg-dark-green rounded-[5rem] text-rapture-blue  w-[12rem] p-2 text-center hover:bg-rapture-blue hover:text-dark-green " >save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" flex flex-col flex-1 bg-[#fff] bg-opacity-[97%]">
+                <svg id="add-svg"  class="w-[18rem] h-[18rem] self-center my-auto" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="782.04441" height="701.88002" viewBox="0 0 782.04441 701.88002" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M609.48783,100.59015l-25.44631,6.56209L270.53735,187.9987,245.091,194.56079A48.17927,48.17927,0,0,0,210.508,253.17865L320.849,681.05606a48.17924,48.17924,0,0,0,58.61776,34.58317l.06572-.01695,364.26536-93.93675.06572-.01695a48.17923,48.17923,0,0,0,34.58309-58.6178l-110.341-427.87741A48.17928,48.17928,0,0,0,609.48783,100.59015Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/>
+                    <path d="M612.94784,114.00532l-30.13945,7.77236L278.68955,200.20385l-30.139,7.77223a34.30949,34.30949,0,0,0-24.6275,41.74308l110.341,427.87741a34.30946,34.30946,0,0,0,41.7431,24.62736l.06572-.01695,364.26536-93.93674.06619-.01707a34.30935,34.30935,0,0,0,24.627-41.7429l-110.341-427.87741A34.30938,34.30938,0,0,0,612.94784,114.00532Z" transform="translate(-208.9778 -99.05999)" fill="#fff"/><path d="M590.19,252.56327,405.917,300.08359a8.01411,8.01411,0,0,1-4.00241-15.52046l184.273-47.52033A8.01412,8.01412,0,0,1,590.19,252.56327Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M628.955,270.49906,412.671,326.27437a8.01411,8.01411,0,1,1-4.00241-15.52046l216.284-55.77531a8.01411,8.01411,0,0,1,4.00242,15.52046Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M620.45825,369.93676l-184.273,47.52032a8.01411,8.01411,0,1,1-4.00242-15.52046l184.273-47.52032a8.01411,8.01411,0,1,1,4.00241,15.52046Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M659.22329,387.87255l-216.284,55.77531a8.01411,8.01411,0,1,1-4.00242-15.52046l216.284-55.77531a8.01411,8.01411,0,0,1,4.00242,15.52046Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M650.72653,487.31025l-184.273,47.52033a8.01412,8.01412,0,0,1-4.00242-15.52047l184.273-47.52032a8.01411,8.01411,0,0,1,4.00242,15.52046Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M689.49156,505.246l-216.284,55.77532a8.01412,8.01412,0,1,1-4.00241-15.52047l216.284-55.77531a8.01411,8.01411,0,0,1,4.00242,15.52046Z" transform="translate(-208.9778 -99.05999)" fill="#f2f2f2"/><path d="M374.45884,348.80871l-65.21246,16.817a3.847,3.847,0,0,1-4.68062-2.76146L289.5963,304.81607a3.847,3.847,0,0,1,2.76145-4.68061l65.21247-16.817a3.847,3.847,0,0,1,4.68061,2.76145l14.96947,58.04817A3.847,3.847,0,0,1,374.45884,348.80871Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M404.72712,466.1822l-65.21247,16.817a3.847,3.847,0,0,1-4.68062-2.76146l-14.96946-58.04816A3.847,3.847,0,0,1,322.626,417.509l65.21246-16.817a3.847,3.847,0,0,1,4.68062,2.76145l14.96946,58.04817A3.847,3.847,0,0,1,404.72712,466.1822Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M434.99539,583.55569l-65.21246,16.817a3.847,3.847,0,0,1-4.68062-2.76145l-14.96946-58.04817a3.847,3.847,0,0,1,2.76145-4.68062l65.21247-16.817a3.847,3.847,0,0,1,4.68061,2.76146l14.96947,58.04816A3.847,3.847,0,0,1,434.99539,583.55569Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M863.63647,209.0517H487.31811a48.17928,48.17928,0,0,0-48.125,48.12512V699.05261a48.17924,48.17924,0,0,0,48.125,48.12507H863.63647a48.17924,48.17924,0,0,0,48.125-48.12507V257.17682A48.17928,48.17928,0,0,0,863.63647,209.0517Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M863.637,222.90589H487.31811a34.30948,34.30948,0,0,0-34.271,34.27093V699.05261a34.30947,34.30947,0,0,0,34.271,34.27088H863.637a34.30936,34.30936,0,0,0,34.27051-34.27088V257.17682A34.30937,34.30937,0,0,0,863.637,222.90589Z" transform="translate(-208.9778 -99.05999)" fill="#fff"/><circle cx="694.19401" cy="614.02963" r="87.85039" fill="#79c8c7"/><path d="M945.18722,701.63087H914.63056V671.07421a11.45875,11.45875,0,0,0-22.9175,0v30.55666H861.1564a11.45875,11.45875,0,0,0,0,22.9175h30.55666V755.105a11.45875,11.45875,0,1,0,22.9175,0V724.54837h30.55666a11.45875,11.45875,0,0,0,0-22.9175Z" transform="translate(-208.9778 -99.05999)" fill="#fff"/><path d="M807.00068,465.71551H616.699a8.01412,8.01412,0,1,1,0-16.02823H807.00068a8.01412,8.01412,0,0,1,0,16.02823Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M840.05889,492.76314H616.699a8.01412,8.01412,0,1,1,0-16.02823H840.05889a8.01411,8.01411,0,1,1,0,16.02823Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M807.00068,586.929H616.699a8.01412,8.01412,0,1,1,0-16.02823H807.00068a8.01411,8.01411,0,0,1,0,16.02823Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M840.05889,613.97661H616.699a8.01412,8.01412,0,1,1,0-16.02823H840.05889a8.01412,8.01412,0,1,1,0,16.02823Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M574.07028,505.04162H506.72434a3.847,3.847,0,0,1-3.84278-3.84278V441.25158a3.847,3.847,0,0,1,3.84278-3.84278h67.34594a3.847,3.847,0,0,1,3.84278,3.84278v59.94726A3.847,3.847,0,0,1,574.07028,505.04162Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M574.07028,626.25509H506.72434a3.847,3.847,0,0,1-3.84278-3.84278V562.46505a3.847,3.847,0,0,1,3.84278-3.84278h67.34594a3.847,3.847,0,0,1,3.84278,3.84278v59.94726A3.847,3.847,0,0,1,574.07028,626.25509Z" transform="translate(-208.9778 -99.05999)" fill="#e6e6e6"/><path d="M807.21185,330.781H666.91017a8.01411,8.01411,0,0,1,0-16.02823H807.21185a8.01411,8.01411,0,0,1,0,16.02823Z" transform="translate(-208.9778 -99.05999)" fill="#ccc"/><path d="M840.27007,357.82862H666.91017a8.01411,8.01411,0,1,1,0-16.02822h173.3599a8.01411,8.01411,0,0,1,0,16.02822Z" transform="translate(-208.9778 -99.05999)" fill="#ccc"/><path d="M635.85911,390.6071H506.51316a3.847,3.847,0,0,1-3.84277-3.84277V285.81706a3.847,3.847,0,0,1,3.84277-3.84277H635.85911a3.847,3.847,0,0,1,3.84277,3.84277V386.76433A3.847,3.847,0,0,1,635.85911,390.6071Z" transform="translate(-208.9778 -99.05999)" fill="#79c8c7"/>
+                </svg>
+            </div>
+        </div>
+      </div>     
+    </div>
+    <div class="flex flex-row bg-midnight-green" id="about-page">
+      <div class="flex flex-col overflow-hidden">
+        <div class=" laptop:mx-[10.3125rem] laptop:mt-[4.5625rem] laptop:h-[20.25rem] laptop:w-[69.375rem] laptop:flex laptop:flex-col laptop:gap-y-[7.5rem] tablet:mt-[4rem] tablet:mx-[2.4375rem]  tablet:flex tablet:gap-y-[5rem] tablet:flex-col tablet:h-[23.75rem] tablet:w-[43.0625rem] mobile:w-[20.44rem] mobile:mx-12 mobile:flex mobile:flex-col mobile:mt-[3rem] mobile:gap-y-20">
+          <nav class="flex flex-row nav-mobile tablet:items-center laptop:items-center">
+            <div >
+                <img class="logosize-mobile" src='../assets/logo.svg'/>
+            </div>
+            <div class="flex flex-row laptop:mt-[-0.5rem]  laptop:pl-[5rem]  tablet:pl-[3rem] gap-[3rem] mobile:hidden">
+                <a href="../index.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold  text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3></a>
+                <a href="#"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
+            </div>
+            <a href="../contact.html"><button class="cursor-pointer hover:bg-[#fff] hover:text-dark-green  laptop:ml-[40rem]  tablet:ml-[10.77rem] border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff] mobile:hidden">contact us</button></a>
+            <div id="menu-btn" class="cursor-pointer mobile:w-[1.25rem] mobile:h-[1.0625rem] mobile:mt-1 tablet:hidden laptop:hidden">
+                <img src='../assets/menu-white.svg'/>
+            </div>
+          </nav>
+          <div class="font-livvic text-[#fff] text-center laptop:flex laptop:flex-row laptop:gap-12 tablet:flex tablet:flex-col  tablet:h-[15rem] tablet:gap-y-[1.7rem] tablet:w-[28.5625rem] tablet:mx-auto mobile:flex mobile:flex-col mobile:gap-y-4">
+            <h1 class="laptop:w-[21.875rem] font-bold text-[2.5rem] leading-[2.5rem]">About</h1>
+            <div class="laptop:flex laptop:flex-col laptop:gap-y-10">
+              <div class="laptop:w-[3.125rem] laptop:h-1 laptop:bg-light-coral tablet:hidden mobile:hidden" ></div>
+              <p class="font-semibold leading-[1.75rem] laptop:text-left tablet:h-[8.75rem] tablet:w-[27.5625rem] mobile:w-[20.4375rem]">
+                We help companies build dynamic teams made up of top global talent.
+                Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. 
+                We’ll bring those teams to you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img class="w-[12.5rem] h-[12.5rem] mobile:ml-[20.4rem]  tablet:ml-[42rem] tablet:mt-[-5.5rem] laptop:ml-auto laptop:relative laptop:left-[7rem] laptop:bottom-[4.2rem]" src='../public/assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+      </div>
+    </div>
+    <div class="flex flex-row bg-deep-jungle-green" id="teams-section">
+      <div class="laptop:flex laptop:flex-col tablet:overflow-hidden tablet:flex tablet:flex-col mobile:flex mobile:flex-col mobile:overflow-hidden ">
+        <div class=" laptop:relative laptop:left-[-8rem] tablet:-ml-[6.5rem] tablet:mr-auto mobile:-mt-[6.8rem] mobile:-ml-[6.5rem] ">
+          <img src='../public/assets/bg-pattern-about-2-contact-1.svg'/>
+        </div>
+        <div id="edit-btn"  class=" tablet:hidden mobile:hidden w-[1.5rem]   relative ml-[84rem] mt-2 hover:cursor-pointer">
+            <svg  class="hover:stroke-light-coral stroke-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+            </svg>
+        </div>
+        <div id="teams-container"  class=" laptop:mx-[10.3125rem] laptop:mt-[-4.6rem] tablet:mx-[6.125rem] laptop:flex laptop:flex-col laptop:gap-y-12 tablet:flex tablet:flex-col tablet:gap-y-10 tablet:mt-[-6rem] tablet:w-[35.8125rem] tablet:h-[68.6875rem] mobile:h-[117.875rem] mobile:mx-6  mobile:flex mobile:flex-col mobile:gap-y-4 ">
+            <h2  id="teams-header"  class="font-livvic text-[#fff] text-[2rem] font-bold text-center mt-[-0.5rem]">Meet the Team</h2>
+            <div id="teams-profile"  class="laptop:gap-8 laptop:w-[69.375rem] laptop:h-[38rem] laptop:grid laptop:grid-cols-3 tablet:grid tablet:grid-cols-2 tablet:h-[58.6875rem] tablet:gap-x-4 tablet:gap-y-2 mobile:flex mobile:flex-col mobile:gap-y-[1.68rem] chldren:w-[20.4375rem] children:h-[17.5625rem] ">
+                <div class='front'>
+                  <div class=" bg-sacramento font-livvic h-[15.8125rem] flex flex-col mx-auto mobile:teamscontainer profile">
+                    <img class="avatar profile-image" src='../assets/avatar-nikita.jpg'/>
+                    <div class="text-center mobile:mt-4">
+                        <h3 class=" text-rapture-blue avatarText profile-name">Nikita Marks</h3>
+                        <p class="font-italic text-[#fff] profile-role">Founder & CEO</p>
+                        <div class="flex flex-row justify-center gap-4 mx-auto mt-3">
+                            <a class="twitter-link"  href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                            </svg></a>
+                            <a class="linkedIn-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                            </svg></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="update-profile" class="avatarplus hover:rapture-blue hover:cursor-pointer update-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                      <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="front">
+                    <div class="bg-sacramento h-[15.8125rem] flex flex-col font-livvic mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-christian.jpg'/>
+                        <div class="text-center mobile:mt-4">
+                            <h3 class=" text-rapture-blue avatarText profile-name">Cristian Duncan</h3>
+                            <p class="font-italic text-[#fff]  profile-role">Co-founder & COO</p>
+                            <div class="flex flex-row justify-center gap-4 mx-auto mt-3 ">
+                                <a class="twitter-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                    <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                                </svg></a>
+                                <a class="linkedIn-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                    <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div   class="avatarplus hover:fill-rapture-blue hover:cursor-pointer update-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-cruz.jpg'/>
+                        <div class="text-center mobile:mt-4">
+                            <h3 class=" text-rapture-blue avatarText profile-name">Cruz Hamer</h3>
+                            <p class="font-italic text-[#fff] profile-role">Co-founder & CTO</p>
+                            <div class="flex flex-row justify-center gap-4 mx-auto mt-3">
+                                <a class="twitter-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                    <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                                </svg></a>
+                                <a class="linkedIn-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                    <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="avatarplus hover:fill-rapture-blue hover:cursor-pointer update-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                        <img class="avatar profile-image" src='../assets/avatar-drake.jpg'/>
+                        <div class="text-center mobile:mt-4">
+                            <h3 class=" text-rapture-blue avatarText profile-name">Drake Heaton</h3>
+                            <p class="font-italic text-[#fff] profile-role">Business Developement Lead</p>
+                            <div class="flex flex-row justify-center gap-4 mx-auto mt-3">
+                                <a class="twitter-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                    <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                                </svg></a>
+                                <a class="linkedIn-link" href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                    <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="avatarplus hover:fill-rapture-blue hover:cursor-pointer update-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                      </svg>
+                    </div>
+                </div>
+                
+                <div class="mobile:hidden laptop:hidden">
+                    <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] mobile:teamscontainer ">
+                        <div class="mt-8 text-center">
+                            <h3 class=" text-rapture-blue avatarText">Griffin Wise</h3>
+                            <p class="font-italic text-[#fff] w-[14.625rem] mx-auto text-[1rem] font-semibold leading-6">
+                                “Unique perspectives shape unique products, 
+                                which is what you need to survive these days.”
+                            </p>
+                        </div>
+                        <div class="flex flex-row gap-4 mx-auto mt-3 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div  class="avatarplus bg-rapture-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+                            <path fill="##012f34" fill-rule="evenodd" d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="tablet:hidden">
+                  <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                    <img class="avatar profile-image" src='../assets/avatar-griffin.jpg'/>
+                    <div class="text-center mobile:mt-4">
+                      <h3 class=" text-rapture-blue avatarText profile-name">Griffin Wise</h3>
+                      <p class="font-italic text-[#fff] profile-role">Lead Marketing</p>
+                      <div class="flex flex-row justify-center gap-4 mx-auto mt-3 mobile:mt-4">
+                        <a class="twitter-link" href="" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                            </svg>
+                        </a>
+                        <a class="linkedIn-link" href="" target="_blank"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                            </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="avatarplus hover:fill-rapture-blue hover:cursor-pointer update-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="mobile:hidden laptop:hidden">
+                  <div class="bg-sacramento font-livvic  flex flex-col h-[15.8125rem] mobile:teamscontainer profile">
+                      <img class="avatar profile-image" src='../public/assets/avatar-aden.jpg'/>
+                      <div class="text-center mobile:mt-4">
+                          <h3 class=" text-rapture-blue avatarText profile-name">Aden Allen</h3>
+                          <p class="font-italic text-[#fff] profile-role">Head of Talent</p>
+                          <div class="flex flex-row justify-center gap-4 mx-auto mt-3 mobile:mt-4">
+                              <a href="" target="_blank" class="twitter-link">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                                      <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                                  </svg>
+                              </a>
+                              <a href="" target="_blank" class="linkedIn-link">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                      <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div  class="avatarplus hover:bg-rapture-blue hover:cursor-pointer update-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                          <path fill="#012F34" fill-rule="evenodd" d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"/>
+                      </svg>
+                  </div>
+                </div>
+              
+              <div class="tablet:hidden laptop:flex laptop:flex-col">
+                <div class="bg-sacramento font-livvic flex flex-col h-[15.8125rem] laptop:gap-y-4 mobile:teamscontainer ">
+                    <div class="text-center mobile:mt-8 laptop:flex laptop:flex-col laptop:gap-y-3 laptop:mt-6">
+                        <h3 class=" text-rapture-blue avatarText">Aden Allan</h3>
+                        <p class="font-italic text-[#fff] w-[14.625rem] mx-auto text-[1rem] font-semibold leading-6">
+                            “Empowered teams create truly amazing products.
+                            Set the north star and let them follow it.”
+                        </p>
+                    </div>
+                    <div class="mx-auto mobile:flex mobile:flex-row mobile:mt-4 mobile:gap-4 laptop:flex laptop:flex-row laptop:gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                            <path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                            <path fill="#FFF" d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div  class="avatarplus bg-rapture-blue hover:fill-light-coral hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+                        <path fill="##012f34" fill-rule="evenodd" d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="laptop:relative laptop:bottom-[-3rem] laptop:ml-auto tablet:ml-[39rem] mobile:ml-auto">
+          <img src='../public/assets/bg-pattern-home-4-about-3.svg'/>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row bg-sacramento mobile:overflow-hidden " id="clients-section">
+      <div class="overflow-hidden tablet:w-full mobile:flex mobile:flex-col">
+        <div class="relative  w-[12.5rem] z-[0] mobile:ml-[-6.4rem] mobile:mt-[-4.7rem] tablet:mt-[-6.3rem]">
+            <img src='../assets/bg-pattern-about-4.svg'/>
+        </div> 
+        <div class="laptop:mx-[10.3125rem] laptop:mt-[-3rem] laptop:flex laptop:flex-col laptop:gap-y-12 laptop:w-[69.375rem] laptop:h-[9.8125rem] tablet:flex tablet:flex-col tablet:gap-y-16 tablet:mx-[1.75rem]  mobile:z-10 mobile:mx-6   mobile:w-[23.4375rem] mobile:h-[28.5rem] mobile:flex mobile:flex-col mobile:gap-y-20 mobile:mt-[-3.4rem]">
+          <h2 class="font-livvic font-bold text-[2rem] text-center text-[#fff]">Some of our clients</h2>
+          <div class="laptop:flex laptop:flex-row laptop:gap-20 laptop:items-center tablet:w-[43.0625rem] tablet:h-[1.75rem] tablet:flex tablet:flex-row tablet:items-center tablet:gap-12 mobile:flex mobile:flex-col mobile:gap-y-[3.7rem]  mobile:w-[7.714rem] mobile:mx-auto">
+            <img class="laptop:w-[10.3125rem] laptop:h-[1.75rem] tablet:w-[6.4375rem] tablet:h-[1.125rem]" src='../assets/logo-the-verge.png'/>
+            <img class="laptop:w-[11.5rem] laptop:h-[1.43475rem] tablet:w-[7.125rem] tablet:h-[0.875rem]" src='../assets/logo-jakarta-post.png'/>
+            <img class="laptop:w-[11.25rem]  laptop:h-[1.75rem] tablet:w-[7rem] tablet:h-[1.0625rem]" src='../assets/logo-the-guardian.png'/>
+            <img class="laptop:w-[10.3125rem] laptop:h-[1.75rem] tablet:w-[6.4375rem] tablet:h-[1.0625rem]" src='../assets/logo-tech-radar.png'/>
+            <img class="laptop:w-[6.125rem] laptop:h-[2.8125rem] tablet:w-[3.8125rem] tablet:h-[1.75rem]" src='../assets/logo-gadgets-now.png'/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row mobile:justify-center mobile:items-center bg-light-coral" id="contact-section">
+      <div class="contact-mobile tablet:flex tablet:flex-col tablet:h-[15rem] tablet:gap-y-4  tablet:mt-16 laptop:mt-[4.75rem]">
+        <div class=" mobile:mt-[1rem] mobile:ml-[5rem]  mobile:w-[12.89rem] mobile:flex mobile:flex-col  mobile:gap-y-4 flex flex-row justify-center items-center mx-[6.0625rem] tablet:gap-[4rem] laptop:w-[57.3125rem] laptop:justify-between laptop:mx-[16.4375rem] w-[35.8125rem]">
+            <h2 class="font-livvic font-bold text-[2rem] leading-[2rem] text-center text-sacramento ">Ready to get started?</h2>
+            <a href='./contact.html'><button class="h-[3rem] w-[9.5625rem] font-livvic font-semibold text-[1.125rem] leading-[1.75rem] text-sacramento hover:bg-sacramento hover:cursor-pointer hover:text-[#fff] mobile:mx-auto rounded-[1.5rem] border-[0.125rem] border-solid border-sacramento" >contact us</button></a>
+        </div>
+        <div class="w-[12.5rem]  mt-0 tablet:mt-[-3rem] mobile:ml-[-3rem] laptop:mt-[-4.2rem]">
+            <img src='../assets/bg-pattern-home-6-about-5.svg'/>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row laptop:px-[10.3125rem] laptop:py-12 bg-dark-green mobile:py-[4.125rem] mobile:px-[1.5rem]" id="footer">
+      <div class="footer-mobile tablet:flex tablet:flex-col tablet:py-[3.5rem] tablet:mx-auto tablet:w-[43.0675rem] tablet:gap-y-8 laptop:flex laptop:flex-row laptop:w-[69.375rem] laptop:justify-between  laptop:gap-6">
+        <div class=" footerSection1-mobile tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-row laptop:gap-[7.8125rem]">
+          <div class=" flex flex-col mobile:gap-y-4 mobile:mx-auto mobile:mt-[1rem]  tablet:gap-y-[3.3125rem] laptop:gap-y-[1.5625rem]">
+              <div class="laptop:w-[10rem] laptop:h-10 w-[6rem] h-[1.5rem] mobile:mx-auto">
+                  <img src='../assets/logo.svg'/>
+              </div>
+              <div class="flex flex-row mobile:gap-8 tablet:gap-3 laptop:gap-10">
+                  <a href="../index.html"><h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem] hover:text-light-coral cursor-pointer">home</h2></a>
+                  <a href="#"><h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem]  hover:text-light-coral cursor-pointer">about</h2></a>
+              </div>
+          </div>
+          <div class="footerSection2-mobile font-livvic font-semibold text-[0.9375rem] text-[#fff] leading-[1.5625rem]  tablet:text-right laptop:self-center">
+            <p class="opacity-[60%] text-[0.9375rem]">987 Hilcrest Lane</p>
+            <p class="opacity-[60%]">Irvine,CA</p>
+            <p class="opacity-[60%]">California 92714</p>
+            <p class="opacity-[60%]">Call Us: 949-833-7432</p>
+          </div>
+        </div>
+        <div class=" mobile:footerSection3-mobile tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12">
+          <div class="gap-4 footerSvgElement-mobile tablet:flex tablet:flex-row tablet:items-center laptop:flex laptop:flex-row laptop:self-end ">
+              <div>
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path  class="hover:fill-light-coral" fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                  </svg>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path class="hover:fill-light-coral" fill="#FFF" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                  </svg>
+              </div>
+              <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                      <path class="hover:fill-light-coral" fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                  </svg>
+              </div>
+          </div>
+          <p class="font-livvic font-semibold text-[#fff] opacity-[60%]">Copyright 2020.All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module" src="./homepage/homepage-modal.js"></script> -->
+    <script type="module" src="./modal-helper.js"></script>
+    <script type="module" src="./aboutpage/teams-helper.js"></script>
+    <!-- <script type="module" src="./aboutpage/team-helpers/addteam-modal.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/team-helpers/update-modal.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/about-homepage.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/teams-section.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/clients-section.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/contact-section.js"></script> -->
+    <!-- <script type="module" src="./aboutpage/footer.js"></script> -->
   </body>
 </html>

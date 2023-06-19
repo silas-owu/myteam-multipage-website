@@ -619,14 +619,6 @@ video {
   left: -8rem;
 }
 
-.left-\[17\.1875rem\] {
-  left: 17.1875rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-\[0\] {
   z-index: 0;
 }
@@ -1860,19 +1852,6 @@ video {
 
   .mobile\:overflow-x-hidden {
     overflow-x: hidden;
-  }
-
-  .mobile\:border-2 {
-    border-width: 2px;
-  }
-
-  .mobile\:border-dashed {
-    border-style: dashed;
-  }
-
-  .mobile\:border-\[\#332b94\] {
-    --tw-border-opacity: 1;
-    border-color: rgb(51 43 148 / var(--tw-border-opacity));
   }
 
   .mobile\:bg-\[\#000\]\/60 {

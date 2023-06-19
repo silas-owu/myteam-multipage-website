@@ -8,18 +8,250 @@
     <title>MyTeam Multipage Website</title>
   </head>
   <body class="grid grid-rows-[43.75rem_44.375rem_46.5625rem_12.5rem_12.25rem] tablet:overflow-x-hidden tablet:grid tablet:grid-rows-[43.75rem_44.375rem_74.9375rem_12.5rem_16.9375rem] mobile:grid mobile:grid-rows-[35.4375rem_67.0625rem_88.125rem_18.875rem_27.5rem]  w-full min-h-screen p-0 m-0 border-box mobile:w-full mobile:min-h-screen mobile:overflow-x-hidden laptop:overflow-x-hidden">
-    <div class="laptop:hidden tablet:hidden mobile:invisible mobile:w-full mobile:fixed mobile:inset-0 mobile:min-h-screen  mobile:z-[999]"        id="homepage-modal"></div>
-    <div class="justify-center items-center bg-midnight-green mobile:flex mobile:flex-row tablet:px-[2.5rem] tablet:pt-[4rem]"        id="landing-section"></div>
-    <div class="justify-center bg-sacramento mobile:flex mobile:flex-row tablet:flex tablet:flex-row"        id="coreval-section"></div>
-    <div class="flex flex-row bg-deep-jungle-green"        id="testimonials-section"></div>
-    <div class="flex flex-row mobile:justify-center mobile:items-center bg-light-coral"        id="contact-section"></div>
-    <div class="flex flex-row laptop:px-[10.3125rem] laptop:py-12 bg-dark-green mobile:py-[4.125rem] mobile:px-[1.5rem]"        id="footer-section"></div>
-    <script type="module" src="./homepage/modal-helper.js"></script>
-    <script type="module" src="./homepage/homepage-modal.js"></script>
-    <script type="module" src="./homepage/landing-section.js"></script>
-    <script type="module" src="./homepage/coreval-section.js"></script>
-    <script type="module" src="./homepage/testimonials-section.js"></script>
-    <script type="module" src="./homepage/contact-section.js"></script>
-    <script type="module" src="./homepage/footer-section.js"></script>
+    <div class="laptop:hidden tablet:hidden mobile:invisible mobile:w-full mobile:fixed mobile:inset-0 mobile:min-h-screen  mobile:z-[999]" id="homepage-modal">
+      <div class="mobile:fixed mobile:w-full mobile:h-full mobile:bg-[#000]/60">
+        <div class="mobile:px-12 mobile:fixed mobile:inset-0 mobile:w-[15.9375rem] mobile:bg-police-blue mobile:ml-auto mobile:flex mobile:flex-col mobile:gap-[15rem]" >
+          <div class="mobile:gap-y-[2.375rem] mobile:w-[11.3rem] mobile: mobile:flex mobile:flex-col   mobile:mt-[3.523125rem]  mobile:h-[17rem]">
+              <div id="close-btn" class="mobile:w-[1.01625rem] mobile:h-[1.01625rem] mobile:ml-auto ">
+                  <img src='../assets/icon-close.svg'/>
+              </div>
+              <div class="mobile:flex mobile:flex-col mobile:gap-y-8">
+                  <a href="./index.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold  text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3></a>
+                  <a href="./aboutpage.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
+              </div>
+              <a href="./contact.html"><button class="cursor-pointer mt-[2.25rem] hover:bg-[#fff] hover:text-dark-green  border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff]">contact us</button></a>
+          </div>
+          <div class="mobile:mt-[-10.5rem]  mobile:mr-[-10rem] mobile:w-[12.5rem] mobile:h-[12.5rem] mobile:self-end ">
+              <img src='../assets/bg-pattern-about-1-mobile-nav-1.svg'/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="justify-center items-center bg-midnight-green mobile:flex mobile:flex-row tablet:px-[2.5rem] tablet:pt-[4rem]" id="landing-section">
+      <div class="laptop:flex laptop:flex-col  laptop:mt-[3.875rem] laptop:mx-[10.3125rem] laptop:h-[46.125rem]   mobile:flex mobile:flex-col mobile:mx-4 tablet:w-[43.0625rem] tablet:flex tablet:flex-col  tablet:gap-[9.75rem]">
+        <div class=" laptop:grid laptop:grid-rows-[3rem_13.125rem] laptop:gap-y-[8.75rem] tablet:grid tablet:grid-rows-[3rem_13.75rem] tablet:gap-y-[7rem] mobile:h-[20.44rem] mobile:w-[20.44rem] mobile:mx-1 mobile:pr-[0.5rem]  mobile:mt-[3rem] mobile:grid mobile:grid-rows-[5rem_13.125rem] mobile:gap-y-[2.1rem] ">
+        <nav class="flex flex-row nav-mobile tablet:items-center">
+          <div class="logosize-mobile">
+            <img src='../assets/logo.svg'/>
+          </div>
+          <div class="flex laptop:my-1  laptop:pl-[3rem]  tablet:pl-[3rem] gap-[3rem] mobile:hidden">
+            <h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold la text-[#fff] text-[1.125rem] leading-[1.75rem]">home</h3>
+            <a href="../aboutpage.html"><h3 class="cursor-pointer hover:text-light-coral font-livvic font-semibold text-[#fff] text-[1.125rem] leading-[1.75rem]">about</h3></a>
+          </div>
+          <a href="../contact.html"><button class="cursor-pointer hover:bg-[#fff] hover:text-dark-green  laptop:ml-[40rem]  tablet:ml-[10.77rem] border-solid border-[#fff] border-2 rounded-3xl font-livvic font-semibold w-[9.5625rem] h-[3rem] text-[#fff] mobile:hidden">contact us</button></a>
+          <div id="menu-btn" class="cursor-pointer mobile:w-[1.25rem] mobile:h-[1.0625rem] mobile:mt-1 tablet:hidden laptop:hidden">
+            <img src='../assets/menu-white.svg'/>
+          </div>
+        </nav>
+        <div class="laptop:grid laptop:grid-cols-[39.6875rem_27.8125rem]  tablet:flex tablet:mx-auto tablet:flex-col tablet:gap-[1.5rem] mobile:flex mobile:flex-col mobile:gap-[1rem]">
+          <h1 class="laptop:text-[6.25rem] laptop:leading-[6.25rem] laptop:text-left tablet:text-[4rem] tablet:leading-[3.5rem] font-livvic font-bold text-[2.5rem] text-[#fff] leading-[2.5rem] text-center">
+            Find the <br> best <span class="text-light-coral">talent</span>
+          </h1>
+          <div class="laptop:flex laptop:flex-col laptop:items-start laptop:justify-between tablet:w-[28.5625rem] tablet:h-[5.25rem] laptop:text-left ">
+            <div class="laptop:w-[3.125rem] laptop:h-1 laptop:bg-[#79C8C7] tablet:hidden mobile:hidden" ></div>
+            <p class="laptop:text-[1.125rem] laptop:text-left font-livvic font-semibold text-[#fff] text-[0.9375rem] leading-[1.75rem] text-center mobile:w-[21.5rem]">
+              Finding the right people and building high performing teams can be hard.
+              Most companies aren’t tapping into the abundance of global talent. 
+              We’re about to change that.
+            </p> 
+          </div>
+        </div>
+        </div>
+        <div class="laptop:self-end laptop:mt-[9rem] tablet:mx-auto  mobile:self-center  mobile:mt-[4rem] mobile:w-[22.375rem] mobile:h-[12.5rem]">
+          <img src='../assets/bg-home-pattern.svg'/>
+        </div>
+        <div class="laptop:absolute laptop:left-[-6.5rem] laptop:top-[16rem] tablet:hidden mobile:hidden">
+          <img src='../assets/bg-pattern-home-1.svg'/>
+        </div>
+      </div>
+    </div>
+    <div class="justify-center bg-sacramento mobile:flex mobile:flex-row tablet:flex tablet:flex-row" id="coreval-section">
+      <div class="relative mobile:flex mobile:flex-col mobile:overflow-x-hidden tablet:overflow-x-hidden tablet:w-full laptop:overflow-x-hidden laptop:h-full mobile:w-full">
+        <div class="absolute w-[12.5rem] h-[15.25rem]  laptop:overflow-x-hidden laptop:right-[-6.3rem] laptop:top-[28.8rem]  tablet:left-[38rem] tablet:ml-14  mobile:left-[19rem] mobile:ml-[2rem] ">
+          <img src='../assets/bg-pattern-home-3.svg'/>
+        </div>
+        <div class="laptop:w-[69.375rem] laptop:h-[25.25rem] laptop:mx-auto laptop:my-[8.75rem] laptop:grid laptop:grid-cols-[27.8125rem_33.75rem]  laptop:children:border-[#eef] laptop:gap-x-[7.8125rem]  mobile:mx-10 mobile:my-[4rem] mobile:gap-y-[3.5rem] mobile:grid mobile:grid-rows-[12.25rem_43.3125rem] mobile:w-[20.4375rem] tablet:w-[35.8125rem] tablet:h-[31.875rem] tablet:grid tablet:grid-rows-[4rem_21.625rem] tablet:mt-[7rem] tablet:mx-auto tablet:gap-y-[6.7rem]">
+            <div class="mobile:w-[15rem] mobile:flex mobile:flex-col mobile:gap-7 tablet:w-[27.8125rem] tablet:h-[4rem] laptop:h-[12.625rem] laptop:flex laptop:flex-col laptop:gap-y-12">
+                <div class=" bg-light-coral w-[3.125rem] h-[0.25rem]"></div>
+                <h2 class="laptop:text-[3rem] laptop:leading-[3rem] laptop:h-[9rem] tablet:text-[2rem] tablet:leading-8 tablet:h-[4rem] tablet:mt-8 font-livvic font-bold mobile:text-[2rem] mobile:leading-[2rem] text-[#fff]">
+                    Build &
+                    manage 
+                    distributed
+                    teams like no 
+                    one else.
+                </h2>
+            </div>
+            <div class="laptop:mt-[3.3rem] laptop:flex laptop:flex-col laptop:gap-y-8 tablet:flex tablet:flex-col  tablet:gap-y-8 mobile:flex mobile:flex-col mobile:gap-y-[1.6rem] laptop:children:flex laptop:children:flex-row">
+                <div class="gap-6  mobile:flex mobile:flex-col text-[#fff] mobile:mx-auto mobile:gap-y-2 flex flex-row">
+                    <div class="w-[4.5rem] h-[4.5rem] mobile:mx-auto">
+                        <img src='../assets/icon-person.svg'/>
+                    </div>
+                    <div class="flex flex-col gap-y-4 mobile:gap-y-1">
+                        <h3 class="tablet:text-left laptop:text-left font-livvic font-bold text-[1.125rem] mobile:text-center text-light-coral">Experienced Individuals</h3>
+                        <p class="font-livvic font-semibold text-[0.9375rem] leading-[1.5625rem] laptop:text-left mobile:text-center tablet:leading-[1.5rem] tablet:text-[0.9375rem] opacity-40 tablet:text-left  mobile:mt-2">
+                            Our network is made up of highly experienced
+                            professionals who are passionate about what
+                            they do
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="gap-6 mobile:flex mobile:flex-col text-[#fff] mobile:mx-auto mobile:gap-y-2 flex flex-row">
+                    <div class="w-[4.5rem] h-[4.5rem] mobile:mx-auto">
+                        <img src='../assets/icon-cog.svg'/>
+                    </div>
+                    <div class="flex flex-col gap-y-4 mobile:gap-y-1">
+                        <h3 class="laptop:text-left tablet:text-left font-livvic font-bold text-[1.125rem] text-center text-light-coral">Easy to Implement</h3>
+                        <p class="laptop:text-left font-livvic font-semibold text-[0.9375rem] leading-[1.5625rem] opacity-40 tablet:text-left mobile:text-center mobile:mt-2">
+                            Our processes have been refined over years of
+                            implementation meaning our teams always 
+                            deliver.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="gap-6  mobile:flex mobile:flex-col text-[#fff] mobile:mx-auto  flex flex-row">
+                    <div class="w-[4.5rem] h-[4.5rem] mobile:mx-auto">
+                        <img src='../assets/icon-chart.svg'/>
+                    </div>
+                    <div class="flex flex-col gap-y-4 mobile:gap-y-1 mobile:w-[20.4375rem]">
+                        <h3 class="laptop:text-left tablet:text-left font-livvic font-bold text-[1.125rem] mobile:text-center text-light-coral">Enhanced Productivity</h3>
+                        <p class="font-livvic font-semibold text-[0.9375rem] leading-[1.5625rem] laptop:text-left opacity-40 mobile:text-center mobile:mt-2">
+                            Our customized platform with in-built
+                            analytics helps you manage your distrbuted
+                            teams
+                        </p>
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row bg-deep-jungle-green" id="testimonials-section">
+      <div class="mobile:w-full mobile:flex mobile:flex-col mobile:gap-y-14 tablet:gap-y-2 mobile:mx-auto tablet:flex tablet:flex-col laptop:flex laptop:flex-col laptop:w-[95rem] laptop:gap-y-10">
+        <div class="mobile:w-[9.1875rem] mobile:h-[6.25rem]">
+          <img src='../assets/bg-pattern-home-4-about-3.svg'/>
+        </div>
+        <div class="laptop:gap-y-[3.5rem] laptop:mx-[10.3125rem]  laptop:h-[29.0625rem] laptop:w-[69.375rem] tablet:mx-[6.125rem] laptop:flex laptop:flex-col  tablet:flex tablet:flex-col tablet:w-[35.8125rem] tablet:h-[62.4375rem] mobile:flex mobile:flex-col mobile:gap-y-8 mobile:w-[20.4375rem] mobile:h-[69.125rem] mobile:mx-[2rem]">
+          <div class="mobile:h-[8rem] tablet:h-[6rem] laptop:w-[40rem] laptop:h-[6rem] text-center laptop:mx-auto">
+          <h2 class="font-livvic text-[2rem] mobile:leading-8 tablet:leading-7 text-center font-bold text-[#fff]">
+              Delivering real results for top companies.
+              Some of our <span class="text-rapture-blue">success stories.</span>
+          </h2>
+          </div>
+          <div class="mobile:flex mobile:flex-col mobile:gap-y-8 mobile:h-[58.125rem] tablet:gap-y-7 children:h-[17.375rem] tablet:flex tablet:flex-col tablet:mt-[1rem] laptop:flex laptop:flex-row  laptop:gap-10">
+            <div class="mobile:flex mobile:flex-col mobile:h-[17.375rem] tablet:flex tablet:flex-col tablet:h-[15.8125rem] laptop:">
+                <div class="w-[4.1875rem] h-[3.5rem] mx-auto">
+                    <img src='../assets/icon-quotes.svg'/>
+                </div>
+                <h3 class="mt-[-1.2rem] text-[#fff] font-livvic font-semibold text-[0.9375rem] leading-[1.5rem] text-center">
+                    “The team perfectly fit the specialized skill set required.
+                    They focused on the most essential features helping us 
+                    launch the platform eight months faster than planned.”
+                </h3>
+                <div class="flex flex-col h-[7.875rem] mx-auto mt-[1rem] items-center gap-y-1 font-livvic">
+                  <h3 class="text-rapture-blue text-center text-[1.125rem] leading-[1.75rem] font-semibold ">Kady Baker</h3>
+                  <h4 class=" font-livvic font-italic text-[#fff] font-medium leading-[1.125rem] text-[0.825rem] ">Product Manager at Bookmark</h4>
+                  <div class="rounded-full w-[3.875rem] h-[3.875rem] border-solid border-[0.125rem] border-[#c4ffee]">
+                    <img src='../assets/avatar-kady.jpg' class="rounded-full"/>
+                  </div>
+                </div>
+            </div>
+            <div class="mobile:flex mobile:flex-col mobile:h-[17.375rem] tablet:flex tablet:flex-col tablet:h-[15.8125rem] ">
+                <div class="w-[4.1875rem] h-[3.5rem]  mx-auto">
+                    <img src='../assets/icon-quotes.svg'/>
+                </div>
+                <h3 class="mt-[-1.2rem] text-[#fff] font-livvic font-semibold text-[0.9375rem] leading-[1.5rem] text-center">
+                  “We needed to automate our entire onboarding process. 
+                  The team came in and built out the whole journey.
+                  Since going live, user retention has gone through the roof!”
+                </h3>
+                <div class="flex flex-col h-[7.875rem] mx-auto mt-[1.5rem] items-center gap-y-1 font-livvic">
+                    <h3 class="text-rapture-blue text-center text-[1.125rem] leading-[1.75rem] font-semibold ">Aiysha Resee</h3>
+                    <h4 class="font-livvic font-italic text-[#fff] leading-[1.125rem] text-[0.825rem]">Founder at Manage</h4>
+                    <div class="rounded-full w-[3.875rem] h-[3.875rem] border-solid border-[0.125rem] border-[#c4ffee]">
+                        <img src='../assets/avatar-aiysha.jpg' class="rounded-full"/>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile:flex mobile:flex-col mobile:h-[17.375rem] tablet:flex tablet:flex-col tablet:h-[15.8125rem]">
+                <div class="w-[4.1875rem] h-[3.5rem] mx-auto">
+                    <img src='../assets/icon-quotes.svg'/>
+                </div>
+                <h3 class="mt-[-1.2rem] text-[#fff] font-livvic font-semibold text-[0.9375rem] leading-[1.5rem] text-center">
+                    “Amazing. Our team helped us build an app that delivered 
+                    a new experience for hiring a physio.
+                    The launch was an instant success with 100k
+                    downloads in the first month.”
+                </h3>
+                <div class="flex flex-col h-[7.875rem] mx-auto mt-[1.5rem] items-center gap-y-1 font-livvic">
+                    <h3 class="text-rapture-blue text-center text-[1.125rem] leading-[1.75rem] font-semibold ">Arthur Clarke</h3>
+                    <h4 class="font-livvic font-italic text-[#fff] font-medium leading-[1.125rem] text-[0.825rem] ">Co-founder of Myphysio</h4>
+                    <div class="rounded-full w-[3.875rem] h-[3.875rem] border-solid border-[0.125rem] border-[#c4ffee]">
+                        <img src='../assets/avatar-arthur.jpg' class="rounded-full"/>
+                    </div>
+                </div>
+            </div>               
+          </div>
+        </div>
+        <div class="w-[12.5rem] h-[6.2rem]  mobile:ml-auto tablet:ml-auto self-end">
+          <img src='../assets/bg-pattern-home-5.svg'/>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row mobile:justify-center mobile:items-center bg-light-coral" id="contact-section">
+      <div class=" contact-mobile tablet:flex tablet:flex-col tablet:h-[15rem] tablet:gap-y-4  tablet:mt-16 laptop:mt-[4.75rem]">
+        <div class=" mobile:mt-[1rem] mobile:ml-[5rem]  mobile:w-[12.89rem] mobile:flex mobile:flex-col  mobile:gap-y-4 flex flex-row justify-center items-center mx-[6.0625rem] tablet:gap-[4rem] laptop:w-[57.3125rem] laptop:justify-between laptop:mx-[16.4375rem] w-[35.8125rem]">
+          <h2 class="font-livvic font-bold text-[2rem] leading-[2rem] text-center text-sacramento ">Ready to get started?</h2>
+          <a href='./contact.html'><button class="h-[3rem] w-[9.5625rem] font-livvic font-semibold text-[1.125rem] leading-[1.75rem] text-sacramento hover:bg-sacramento hover:cursor-pointer hover:text-[#fff] mobile:mx-auto rounded-[1.5rem] border-[0.125rem] border-solid border-sacramento" >contact us</button></a>
+        </div>
+        <div class="w-[12.5rem]  mt-0 tablet:mt-[-3rem] mobile:ml-[-3rem] laptop:mt-[-4.2rem]">
+          <img src='../assets/bg-pattern-home-6-about-5.svg'/>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row laptop:px-[10.3125rem] laptop:py-12 bg-dark-green mobile:py-[4.125rem] mobile:px-[1.5rem]" id="footer-section">
+      <div class="footer-mobile tablet:flex tablet:flex-col tablet:py-[3.5rem] tablet:mx-auto tablet:w-[43.0675rem] tablet:gap-y-8 laptop:flex laptop:flex-row laptop:w-[69.375rem] laptop:justify-between  laptop:gap-6">
+        <div class=" footerSection1-mobile tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-row laptop:gap-[7.8125rem]">
+            <div class=" flex flex-col mobile:gap-y-4 mobile:mx-auto mobile:mt-[1rem]  tablet:gap-y-[3.3125rem] laptop:gap-y-[1.5625rem]">
+              <div class="laptop:w-[10rem] laptop:h-10 w-[6rem] h-[1.5rem] mobile:mx-auto">
+                  <img src='../assets/logo.svg'/>
+              </div>
+              <div class="flex flex-row mobile:gap-8 tablet:gap-3 laptop:gap-10">
+                  <h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem] hover:text-light-coral cursor-pointer">home</h2>
+                  <a href="./aboutpage.html"><h2 class="font-livvic text-[#fff] font-semibold text-[1.125rem] leading-[1.75rem]  hover:text-light-coral cor-pointer">about</h2></a>
+              </div>
+            </div>
+            <div class="footerSection2-mobile font-livvic font-semibold text-[0.9375rem] text-[#fff] leading-[1.5625rem]  tablet:text-right laptop:self-center">
+              <p class="opacity-[60%] text-[0.9375rem]">987 Hilcrest Lane</p>
+              <p class="opacity-[60%]">Irvine,CA</p>
+              <p class="opacity-[60%]">California 92714</p>
+              <p class="opacity-[60%]">Call Us: 949-833-7432</p>
+            </div>
+        </div>
+        <div class=" mobile:footerSection3-mobile tablet:flex tablet:flex-row tablet:justify-between laptop:flex laptop:flex-col laptop:gap-y-12">
+          <div class="gap-4 footerSvgElement-mobile tablet:flex tablet:flex-row tablet:items-center laptop:flex laptop:flex-row laptop:self-end ">
+              <div>
+                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path  class="hover:fill-light-coral" fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                </svg>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path class="hover:fill-light-coral" fill="#FFF" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                  <path class="hover:fill-light-coral" fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+                </svg>
+              </div>
+          </div>
+          <p class="font-livvic font-semibold text-[#fff] opacity-[60%]">Copyright 2020.All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./modal-helper.js"></script>
   </body>
 </html>

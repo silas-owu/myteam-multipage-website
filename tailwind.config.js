@@ -3,9 +3,8 @@
  
 export default {
    content: [
-    './homepage/*.js',
     './aboutpage/*.js',
-    './aboutpage/team-helpers/*.js',
+    './aboutpage/team-helpers.js',
     './contactpage/*.js',
     '*.html'],
    theme: {

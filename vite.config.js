@@ -6,8 +6,8 @@ export default defineConfig({
         rollupOptions:{
             input:{
                 main: resolve(__dirname, 'index.html'),
-                sub1: resolve(__dirname, 'aboutpage.html'),
-                sub2: resolve(__dirname, 'contact.html')
+                sub1: resolve(__dirname, './aboutpage.html'),
+                sub2: resolve(__dirname, './contact.html')
             }
         }
     }
